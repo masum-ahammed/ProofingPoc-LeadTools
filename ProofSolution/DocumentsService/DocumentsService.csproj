@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40752939-D8CC-4DB4-AB26-789366BBD6A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentsService</RootNamespace>
+    <AssemblyName>DocumentsService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <DocumentationFile>bin\XmlDocument.xml</DocumentationFile>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>App_Data/XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Use64BitIISExpress>false</Use64BitIISExpress>
+  </PropertyGroup>
+  <!-- v20 - Debug - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>dlls\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>dlls\\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!-- v20 - Debug - x86 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>dlls\\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - x86 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>dlls\\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!-- v20 - Debug - x64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - x64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <LeadConfigPath>..\..\..\..\..\..\Bin\DotNet4\x64\</LeadConfigPath>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!-- Copy the assemblies not referenced directly by the project into the output directory -->
+  <Import Project=".\ExtraAssemblies.targets" />
+  <ItemGroup>
+    <Reference Include="Leadtools, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Annotations.Engine, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Annotations.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Barcode, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Barcode.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Caching, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Caching.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Codecs, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Codecs.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Converter, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Converter.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Pdf, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Pdf.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Raster, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Raster.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Viewer.WinForms, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Viewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Viewer.Wpf, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Viewer.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Document.Writer, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Document.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Drawing, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Ocr, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Ocr.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Ocr.LEADEngine, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\Leadtools.Ocr.LEADEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="Leadtools.Svg, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>dlls\\\Leadtools.Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.FileSystems.3.0.1\lib\net45\Microsoft.Owin.FileSystems.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.StaticFiles.3.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.DocumentManagement.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.Search.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <CodeAnalysisDictionary Include="CodeAnalysis\CustomDictionary.xml" />
+    <Content Include="config-filecache.xml" />
+    <Content Include="index.html" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="index.js" />
+    <Content Include="local.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CodeAnalysis\DotNet.ruleset" />
+    <Content Include="ExtraAssemblies.targets">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="packages.DocumentsService.config" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Resources\development.html" />
+    <Content Include="Resources\Images\Demos\AnnotationDemo.jpg" />
+    <Content Include="Resources\Images\Demos\BankCheckReaderDemo.jpg" />
+    <Content Include="Resources\Images\Demos\BarcodeDemo.jpg" />
+    <Content Include="Resources\Images\Demos\DocumentViewerDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ImageProcessingDemo.jpg" />
+    <Content Include="Resources\Images\Demos\MedicalWebViewerDemo.jpg" />
+    <Content Include="Resources\Images\Demos\MRTDReaderDemo.jpg" />
+    <Content Include="Resources\Images\Demos\OcrDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ScanningDemo.jpg" />
+    <Content Include="Resources\Images\Demos\SvgDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ThumbnailDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ViewerDemo.jpg" />
+    <Content Include="Resources\Images\favicon.ico" />
+    <Content Include="Resources\Images\Icons\90DegreeRuler.png" />
+    <Content Include="Resources\Images\Icons\A.png" />
+    <Content Include="Resources\Images\Icons\AArrow.png" />
+    <Content Include="Resources\Images\Icons\actual.svg" />
+    <Content Include="Resources\Images\Icons\ActualSize.png" />
+    <Content Include="Resources\Images\Icons\ann-about-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-about.svg" />
+    <Content Include="Resources\Images\Icons\ann-align-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-align.svg" />
+    <Content Include="Resources\Images\Icons\ann-bates-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-bates.svg" />
+    <Content Include="Resources\Images\Icons\ann-burn-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-burn.svg" />
+    <Content Include="Resources\Images\Icons\ann-decrypt-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-decrypt.svg" />
+    <Content Include="Resources\Images\Icons\ann-delete-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-delete.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-document-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-document.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-medical-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-medical.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-sticky-note.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-hilite.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-redact.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-strike.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-underline.svg" />
+    <Content Include="Resources\Images\Icons\ann-duplicate-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-duplicate.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-redo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-redo.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-undo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-undo.svg" />
+    <Content Include="Resources\Images\Icons\ann-encrypt-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-encrypt.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-ann-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-ann.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-xml-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-xml.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-undo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-undo.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-cobb.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-four-parallel.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-intersection-lines.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-mid-lines.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-norberg.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-snap-line.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-two-parallel.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-panzoom-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-panzoom.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-select-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-select.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-audio-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-audio.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-cross-product-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-cross-product.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-rich-text-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-rich-text.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-triangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-triangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-freehand-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-freehand.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hilite-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hilite.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-freehand-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-freehand.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-note-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-note.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pin-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pin.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-point-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-point.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pointer-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pointer.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-polyruler-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-polyruler.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-protractor-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-protractor.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-redaction-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-redaction.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-rubberstamp-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-rubberstamp.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-ruler-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-ruler.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-stamp-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-stamp.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-sticky-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-sticky.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-pointer-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-pointer.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-strike-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-strike.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-underline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-underline.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-video-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-video.svg" />
+    <Content Include="Resources\Images\Icons\ann-properties-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-properties.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-remove-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-remove.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-b-spline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-b-spline.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-curve-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-curve.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-ellipse-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-ellipse.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-line-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-line.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polygon-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polygon.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polyline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polyline.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-rectangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-rectangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-triangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-triangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-run-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-run.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-stop-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-stop.svg" />
+    <Content Include="Resources\Images\Icons\Annotations.png" />
+    <Content Include="Resources\Images\Icons\ApplyDecryptor.png" />
+    <Content Include="Resources\Images\Icons\ApplyEncryptor.png" />
+    <Content Include="Resources\Images\Icons\arrow-box-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-left.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-right.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left-disabled.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right-disabled.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right.svg" />
+    <Content Include="Resources\Images\Icons\ArrowDown.png" />
+    <Content Include="Resources\Images\Icons\ArrowUp.png" />
+    <Content Include="Resources\Images\Icons\AutoGetText.png" />
+    <Content Include="Resources\Images\Icons\AutoPanMode.png" />
+    <Content Include="Resources\Images\Icons\Barcode.png" />
+    <Content Include="Resources\Images\Icons\Bookmarks.png" />
+    <Content Include="Resources\Images\Icons\Bottom-Align.png" />
+    <Content Include="Resources\Images\Icons\BSpline.png" />
+    <Content Include="Resources\Images\Icons\Burn.png" />
+    <Content Include="Resources\Images\Icons\Center-Align.png" />
+    <Content Include="Resources\Images\Icons\Circle.png" />
+    <Content Include="Resources\Images\Icons\ClearSelection.png" />
+    <Content Include="Resources\Images\Icons\Clockwise-Small.png" />
+    <Content Include="Resources\Images\Icons\Clockwise.png" />
+    <Content Include="Resources\Images\Icons\Close.png" />
+    <Content Include="Resources\Images\Icons\CobbAngle.png" />
+    <Content Include="Resources\Images\Icons\Collapse.png" />
+    <Content Include="Resources\Images\Icons\CollapseLeft.png" />
+    <Content Include="Resources\Images\Icons\CollapseRight.png" />
+    <Content Include="Resources\Images\Icons\CopyText.png" />
+    <Content Include="Resources\Images\Icons\CounterClockwise-Small.png" />
+    <Content Include="Resources\Images\Icons\CounterClockwise.png" />
+    <Content Include="Resources\Images\Icons\DeselectOnDown-Mouse.png" />
+    <Content Include="Resources\Images\Icons\DeselectOnDown-Touch.png" />
+    <Content Include="Resources\Images\Icons\Disable.png" />
+    <Content Include="Resources\Images\Icons\dlg-close.svg" />
+    <Content Include="Resources\Images\Icons\dlg-create.svg" />
+    <Content Include="Resources\Images\Icons\Document.png" />
+    <Content Include="Resources\Images\Icons\DocumentAnnotations.png" />
+    <Content Include="Resources\Images\Icons\DoubleLayout.png" />
+    <Content Include="Resources\Images\Icons\drop-arrow.svg" />
+    <Content Include="Resources\Images\Icons\EnableToolTip.png" />
+    <Content Include="Resources\Images\Icons\Expand.png" />
+    <Content Include="Resources\Images\Icons\Find-XSmall.png" />
+    <Content Include="Resources\Images\Icons\FindText.png" />
+    <Content Include="Resources\Images\Icons\FirstPage-Small.png" />
+    <Content Include="Resources\Images\Icons\FirstPage.png" />
+    <Content Include="Resources\Images\Icons\Fit.png" />
+    <Content Include="Resources\Images\Icons\fit.svg" />
+    <Content Include="Resources\Images\Icons\FitPage.png" />
+    <Content Include="Resources\Images\Icons\FitWidth.png" />
+    <Content Include="Resources\Images\Icons\Flip.png" />
+    <Content Include="Resources\Images\Icons\folder.svg" />
+    <Content Include="Resources\Images\Icons\FourLines.png" />
+    <Content Include="Resources\Images\Icons\gear-hover.svg" />
+    <Content Include="Resources\Images\Icons\gear.svg" />
+    <Content Include="Resources\Images\Icons\Group.png" />
+    <Content Include="Resources\Images\Icons\H.png" />
+    <Content Include="Resources\Images\Icons\Hand.png" />
+    <Content Include="Resources\Images\Icons\Help.png" />
+    <Content Include="Resources\Images\Icons\Highlight.png" />
+    <Content Include="Resources\Images\Icons\HorizontalLayout.png" />
+    <Content Include="Resources\Images\Icons\HSquiggles.png" />
+    <Content Include="Resources\Images\Icons\Image.png" />
+    <Content Include="Resources\Images\Icons\InertiaScroll.png" />
+    <Content Include="Resources\Images\Icons\InsertAfter.png" />
+    <Content Include="Resources\Images\Icons\InsertBefore.png" />
+    <Content Include="Resources\Images\Icons\Interpolation.png" />
+    <Content Include="Resources\Images\Icons\Intersect.png" />
+    <Content Include="Resources\Images\Icons\LastPage-Small.png" />
+    <Content Include="Resources\Images\Icons\LastPage.png" />
+    <Content Include="Resources\Images\Icons\Left-Align.png" />
+    <Content Include="Resources\Images\Icons\Line.png" />
+    <Content Include="Resources\Images\Icons\LoadBates.png" />
+    <Content Include="Resources\Images\Icons\Lock.png" />
+    <Content Include="Resources\Images\Icons\magnify.svg" />
+    <Content Include="Resources\Images\Icons\MagnifyGlassMode.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Height.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Size.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Width.png" />
+    <Content Include="Resources\Images\Icons\MedicalAnnotation.png" />
+    <Content Include="Resources\Images\Icons\Middle-Align.png" />
+    <Content Include="Resources\Images\Icons\Midline.png" />
+    <Content Include="Resources\Images\Icons\MultiPagesExportText.png" />
+    <Content Include="Resources\Images\Icons\NextPage-Small.png" />
+    <Content Include="Resources\Images\Icons\NextPage-XSmall.png" />
+    <Content Include="Resources\Images\Icons\NextPage.png" />
+    <Content Include="Resources\Images\Icons\Norberg.png" />
+    <Content Include="Resources\Images\Icons\Note.png" />
+    <Content Include="Resources\Images\Icons\notify-more.svg" />
+    <Content Include="Resources\Images\Icons\notify-warning.svg" />
+    <Content Include="Resources\Images\Icons\object-align-bottom.svg" />
+    <Content Include="Resources\Images\Icons\object-align-center.svg" />
+    <Content Include="Resources\Images\Icons\object-align-left.svg" />
+    <Content Include="Resources\Images\Icons\object-align-middle.svg" />
+    <Content Include="Resources\Images\Icons\object-align-right.svg" />
+    <Content Include="Resources\Images\Icons\object-align-top.svg" />
+    <Content Include="Resources\Images\Icons\object-same-height.svg" />
+    <Content Include="Resources\Images\Icons\object-same-size.svg" />
+    <Content Include="Resources\Images\Icons\object-same-width.svg" />
+    <Content Include="Resources\Images\Icons\Open.png" />
+    <Content Include="Resources\Images\Icons\OpenAnnotation.png" />
+    <Content Include="Resources\Images\Icons\OpenUrl.png" />
+    <Content Include="Resources\Images\Icons\pan-zoom.svg" />
+    <Content Include="Resources\Images\Icons\PanMode.png" />
+    <Content Include="Resources\Images\Icons\PanZoomMode.png" />
+    <Content Include="Resources\Images\Icons\ParallelLines.png" />
+    <Content Include="Resources\Images\Icons\Pen.png" />
+    <Content Include="Resources\Images\Icons\Pin.png" />
+    <Content Include="Resources\Images\Icons\Pointer.png" />
+    <Content Include="Resources\Images\Icons\Polygon.png" />
+    <Content Include="Resources\Images\Icons\Polyline.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage-Small.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage-XSmall.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage.png" />
+    <Content Include="Resources\Images\Icons\Print.png" />
+    <Content Include="Resources\Images\Icons\Properties.png" />
+    <Content Include="Resources\Images\Icons\Protractor.png" />
+    <Content Include="Resources\Images\Icons\question.svg" />
+    <Content Include="Resources\Images\Icons\RealizeRedact.png" />
+    <Content Include="Resources\Images\Icons\Rectangle.png" />
+    <Content Include="Resources\Images\Icons\Redact.png" />
+    <Content Include="Resources\Images\Icons\Redo.png" />
+    <Content Include="Resources\Images\Icons\Reload-Small.png" />
+    <Content Include="Resources\Images\Icons\RenderAnnOnThumbnails.png" />
+    <Content Include="Resources\Images\Icons\RenderMode.png" />
+    <Content Include="Resources\Images\Icons\RenderModeSettings.png" />
+    <Content Include="Resources\Images\Icons\ResetRotatePoint.png" />
+    <Content Include="Resources\Images\Icons\RestoreRedact.png" />
+    <Content Include="Resources\Images\Icons\Reverse.png" />
+    <Content Include="Resources\Images\Icons\RichText.png" />
+    <Content Include="Resources\Images\Icons\Right-Align.png" />
+    <Content Include="Resources\Images\Icons\RotateThumb.png" />
+    <Content Include="Resources\Images\Icons\RoundX.png" />
+    <Content Include="Resources\Images\Icons\Ruler.png" />
+    <Content Include="Resources\Images\Icons\Run.png" />
+    <Content Include="Resources\Images\Icons\Save.png" />
+    <Content Include="Resources\Images\Icons\SaveXML.png" />
+    <Content Include="Resources\Images\Icons\Scan.png" />
+    <Content Include="Resources\Images\Icons\ScanSelect.png" />
+    <Content Include="Resources\Images\Icons\SCurve.png" />
+    <Content Include="Resources\Images\Icons\SelectAll.png" />
+    <Content Include="Resources\Images\Icons\SelectAllAnnotations.png" />
+    <Content Include="Resources\Images\Icons\SelectAllText.png" />
+    <Content Include="Resources\Images\Icons\SelectAreaMode.png" />
+    <Content Include="Resources\Images\Icons\SelectTextMode.png" />
+    <Content Include="Resources\Images\Icons\Server.png" />
+    <Content Include="Resources\Images\Icons\Settings.png" />
+    <Content Include="Resources\Images\Icons\ShowLinks.png" />
+    <Content Include="Resources\Images\Icons\ShowTextIndicators.png" />
+    <Content Include="Resources\Images\Icons\SinglePageExportText.png" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left-disabled.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right-disabled.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right.svg" />
+    <Content Include="Resources\Images\Icons\Snap-To-Grid.png" />
+    <Content Include="Resources\Images\Icons\Snap-To-Point.png" />
+    <Content Include="Resources\Images\Icons\Snap.png" />
+    <Content Include="Resources\Images\Icons\Solid.png" />
+    <Content Include="Resources\Images\Icons\Sound.png" />
+    <Content Include="Resources\Images\Icons\Stamp.png" />
+    <Content Include="Resources\Images\Icons\StickyNotes.png" />
+    <Content Include="Resources\Images\Icons\Strikethrough.png" />
+    <Content Include="Resources\Images\Icons\THighlight.png" />
+    <Content Include="Resources\Images\Icons\Thumbnails.png" />
+    <Content Include="Resources\Images\Icons\thumbs.svg" />
+    <Content Include="Resources\Images\Icons\ToBack.png" />
+    <Content Include="Resources\Images\Icons\ToFirst.png" />
+    <Content Include="Resources\Images\Icons\ToFront.png" />
+    <Content Include="Resources\Images\Icons\ToLast.png" />
+    <Content Include="Resources\Images\Icons\tools.svg" />
+    <Content Include="Resources\Images\Icons\Top-Align.png" />
+    <Content Include="Resources\Images\Icons\TrashAll.png" />
+    <Content Include="Resources\Images\Icons\TrashSingle.png" />
+    <Content Include="Resources\Images\Icons\TRedact.png" />
+    <Content Include="Resources\Images\Icons\Triangle.png" />
+    <Content Include="Resources\Images\Icons\Underline.png" />
+    <Content Include="Resources\Images\Icons\Undo.png" />
+    <Content Include="Resources\Images\Icons\Ungroup.png" />
+    <Content Include="Resources\Images\Icons\Unlock.png" />
+    <Content Include="Resources\Images\Icons\UserName.png" />
+    <Content Include="Resources\Images\Icons\VerticalLayout.png" />
+    <Content Include="Resources\Images\Icons\Video.png" />
+    <Content Include="Resources\Images\Icons\view-actual.svg" />
+    <Content Include="Resources\Images\Icons\view-fit.svg" />
+    <Content Include="Resources\Images\Icons\View.png" />
+    <Content Include="Resources\Images\Icons\ViewAsImage.png" />
+    <Content Include="Resources\Images\Icons\ViewAsSvg.png" />
+    <Content Include="Resources\Images\Icons\zoom-gray-in.svg" />
+    <Content Include="Resources\Images\Icons\zoom-gray-out.svg" />
+    <Content Include="Resources\Images\Icons\ZoomIn-Small.png" />
+    <Content Include="Resources\Images\Icons\ZoomIn.png" />
+    <Content Include="Resources\Images\Icons\ZoomMode.png" />
+    <Content Include="Resources\Images\Icons\ZoomOut-Small.png" />
+    <Content Include="Resources\Images\Icons\ZoomOut.png" />
+    <Content Include="Resources\Images\Icons\ZoomToMode.png" />
+    <Content Include="Resources\Images\LEAD.png" />
+    <Content Include="Resources\Images\lead.svg" />
+    <Content Include="Resources\Images\leadtools-color.svg" />
+    <Content Include="Resources\Images\leadtools-gray.png" />
+    <Content Include="Resources\Images\leadtools-gray.svg" />
+    <Content Include="Resources\Images\LeadtoolsHeader.png" />
+    <Content Include="Resources\Images\loading-diamond.gif" />
+    <Content Include="Resources\Images\loading.GIF" />
+    <Content Include="Resources\Images\LoadingBar-Small.gif" />
+    <Content Include="Resources\Images\LoadingBar.GIF" />
+    <Content Include="Resources\Styles\AutomationObjectsList.css" />
+    <Content Include="Resources\Styles\bootstrap\custom-bootstrap.min.css" />
+    <Content Include="Resources\Styles\common-basic.css" />
+    <Content Include="Resources\Styles\common.css" />
+    <Content Include="Resources\Styles\dialogs.css" />
+    <Content Include="Resources\Styles\elements.css" />
+    <Content Include="Resources\Styles\icons-annotations.css" />
+    <Content Include="Resources\Styles\Icons.css" />
+    <Content Include="Resources\Styles\LEADServiceStyles.css" />
+    <Content Include="Resources\Styles\lt-notify.css" />
+    <Content Include="Resources\Styles\lt-slider.css" />
+    <Content Include="Resources\Styles\Sidebar.css" />
+    <Content Include="Resources\Styles\Site.css" />
+    <Content Include="Resources\Styles\spectrum\spectrum.css" />
+    <Content Include="Resources\Styles\SplitWindow.css" />
+    <Content Include="Resources\Styles\tab.css" />
+    <Content Include="Resources\Styles\Table.css" />
+    <Content Include="Resources\Styles\Toolbar.css" />
+    <Content Include="Samples\barcodes.pdf" />
+    <Content Include="Samples\Combined.pdf" />
+    <Content Include="Samples\House1.jpg" />
+    <Content Include="Samples\House2.jpg" />
+    <Content Include="Samples\Leadtools.pdf" />
+    <Content Include="Samples\form_2t.pdf" />
+    <Content Include="Samples\NewHome.pdf" />
+    <Content Include="mimetypes.json" />
+    <Content Include="html-domain-whitelist.json" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Samples\OCR1-4.tif" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CacheController.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\AnnotationsController.cs" />
+    <Compile Include="Controllers\FactoryController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
+    <Compile Include="Controllers\SharePointController.cs" />
+    <Compile Include="Controllers\StatusJobConverterController.cs" />
+    <Compile Include="Controllers\StructureController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Models\AnnotationsModels.cs" />
+    <Compile Include="Models\Base.cs" />
+    <Compile Include="Models\DocumentModels.cs" />
+    <Compile Include="Models\FactoryModels.cs" />
+    <Compile Include="Models\PreCacheModels.cs" />
+    <Compile Include="Models\StatusJobConverterModels.cs" />
+    <Compile Include="Models\ImagesModels.cs" />
+    <Compile Include="Models\PageModels.cs" />
+    <Compile Include="Models\SharePointModels.cs" />
+    <Compile Include="Models\StructureModels.cs" />
+    <Compile Include="Models\TestModels.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\DocumentConverterPreferences.cs" />
+    <Compile Include="Tools\Exceptions\ControllerActivator.cs" />
+    <Compile Include="Tools\Exceptions\GlobalExceptionFilter.cs" />
+    <Compile Include="Tools\Exceptions\GlobalExceptionLogger.cs" />
+    <Compile Include="Tools\Exceptions\ServiceException.cs" />
+    <Compile Include="Tools\Helpers\AlwaysCorsFilter.cs" />
+    <Compile Include="Tools\Helpers\AnnotationsHelper.cs" />
+    <Compile Include="Tools\Helpers\ConverterHelper.cs" />
+    <Compile Include="Tools\Helpers\DocumentHelper.cs" />
+    <Compile Include="Tools\Helpers\ImageResizer.cs" />
+    <Compile Include="Tools\Helpers\ImageSaver.cs" />
+    <Compile Include="Tools\Helpers\PreCacheHelper.cs" />
+    <Compile Include="Tools\Helpers\SaveImageFormat.cs" />
+    <Compile Include="Tools\Helpers\ServiceHelper.cs" />
+    <Compile Include="Tools\Helpers\ZipTools.cs" />
+    <Compile Include="Tools\RequestResponseFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- The below target copies all linked files from their link directories to where they should be in the project. This is necessary for our static server.-->
+  <Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyLicense" BeforeTargets="Build">
+    <!-- Before building and running for IISExpress, copy the license files (if they exist) from the installation. -->
+    <!-- You must set a license and developer key to use the application. -->
+    <!-- If you are not using the installation or publishing to IIS, look in local.config to set the license. -->
+    <PropertyGroup>
+      <LicenseInstallationDir>..\..\..\..\..\..\Common\License</LicenseInstallationDir>
+      <LicenseInstallationFullDir>$(MSBuildProjectDirectory)\$(LicenseInstallationDir)</LicenseInstallationFullDir>
+      <LicenseInstallationMissingMessage>If you experience runtime license problems, make sure you are setting a valid LEADTOOLS runtime license and key.</LicenseInstallationMissingMessage>
+      <LicenseInstallationLocation>Installation license location: "$(LicenseInstallationFullDir)"</LicenseInstallationLocation>
+      <LicenseFile>LEADTOOLS.LIC</LicenseFile>
+      <LicenseFileKey>LEADTOOLS.LIC.key</LicenseFileKey>
+    </PropertyGroup>
+    <Copy SourceFiles="$(LicenseInstallationFullDir)\$(LicenseFile)" Condition="Exists('$(LicenseInstallationFullDir)\$(LicenseFile)')" DestinationFiles="$(OutputPath)\$(LicenseFile)" SkipUnchangedFiles="true" />
+    <Copy SourceFiles="$(LicenseInstallationFullDir)\$(LicenseFileKey)" Condition="Exists('$(LicenseInstallationFullDir)\$(LicenseFileKey)')" DestinationFiles="$(OutputPath)\$(LicenseFileKey)" SkipUnchangedFiles="true" />
+    <Message Importance="high" Condition="!Exists('$(OutputPath)\$(LicenseFile)')" Text="Could not find LEADTOOLS.LIC in the output directory." />
+    <Message Importance="high" Condition="!Exists('$(OutputPath)\$(LicenseFileKey)')" Text="Could not find LEADTOOLS.LIC.key in the output directory." />
+    <Message Importance="high" Condition="!Exists('$(OutputPath)\$(LicenseFile)') Or !Exists('$(OutputPath)\$(LicenseFileKey)')" Text="   $(LicenseInstallationMissingMessage)" />
+    <Message Importance="high" Condition="!Exists('$(OutputPath)\$(LicenseFile)') Or !Exists('$(OutputPath)\$(LicenseFileKey)')" Text="   $(LicenseInstallationLocation)" />
+  </Target>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16219</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20000/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

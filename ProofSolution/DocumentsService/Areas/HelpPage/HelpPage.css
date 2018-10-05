@@ -1,0 +1,181 @@
+html, body {
+   font-family: "Open Sans", Arial, Sans-Serif;
+   margin: 0;
+   padding: 0;
+   color: #4f4f4f;
+}
+
+p {
+   margin-left: 5px;
+}
+
+header, header.help-page {
+   background-color: #3367b1;
+   border-bottom: 5px solid #ddd;
+   margin-top: 0px;
+   padding: 20px 15px;
+}
+
+.help-page span.pull-right a {
+   color: #f7f7f7;
+   float: right;
+}
+
+header h1,
+header .h1 {
+   font-family: "Segoe UI Light", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+   font-weight: normal;
+   color: #f7f7f7;
+   margin: 0;
+}
+
+.help-page h2,
+.help-page .h2 {
+   display: table;
+   margin-left: 5px;
+   color: white;
+   padding: 10px;
+   padding-right: 10%;
+   background-color: #58abbe;
+}
+
+.help-page h3,
+.help-page .h3 {
+   display: table;
+   margin-left: 10px;
+      color: white;
+   padding: 6px;
+   background-color: #508ebd;
+}
+
+.help-page pre.wrapped {
+   white-space: -moz-pre-wrap;
+   white-space: -pre-wrap;
+   white-space: -o-pre-wrap;
+   white-space: pre-wrap;
+}
+
+.help-page .warning-message-container {
+   margin-top: 20px;
+   padding: 0 10px;
+   color: #525252;
+   background: #EFDCA9;
+   border: 1px solid #CCCCCC;
+}
+
+.under-heading {
+   margin-left: 20px;
+}
+
+.api-group {
+   margin-bottom: 45px;
+}
+
+.help-page-table {
+   width: calc(100% - 20px);
+   border-collapse: collapse;
+   text-align: left;
+   margin: 0px 0px 20px 0px;
+   border-top: 1px solid #D4D4D4;
+   border-left: 1px solid #D4D4D4;
+}
+
+   .help-page-table th {
+      text-align: left;
+      font-weight: bold;
+      border-bottom: 1px solid #D4D4D4;
+      padding: 5px 6px 5px 6px;
+   }
+
+   .help-page-table td {
+      border-bottom: 1px solid #D4D4D4;
+      padding: 10px 8px 10px 8px;
+      vertical-align: top;
+   }
+
+   .help-page-table pre,
+   .help-page-table p {
+      margin: 0px;
+      padding: 0px;
+      font-family: inherit;
+      font-size: 100%;
+   }
+
+   .help-page-table tbody tr:hover td {
+      background-color: #F3F3F3;
+   }
+
+.help-page a:hover {
+   background-color: transparent;
+}
+
+.help-page .sample-header {
+   border: 2px solid #D4D4D4;
+   background: #6c6c6c;
+   color: #FFFFFF;
+   padding: 8px 15px;
+   border-bottom: none;
+   display: inline-block;
+   margin: 10px 0px 0px 0px;
+}
+
+.help-page .sample-content {
+   display: block;
+   border-width: 0;
+   padding: 15px 20px;
+   background: #f7f7f7;
+   border: 2px solid #D4D4D4;
+   margin: 0px 0px 10px 0px;
+}
+
+.help-page .api-name {
+   width: 40%;
+}
+
+.help-page .api-documentation {
+   width: 60%;
+}
+
+.help-page .parameter-name {
+   width: 20%;
+}
+
+.help-page .parameter-documentation {
+   width: 40%;
+}
+
+.help-page .parameter-type {
+   width: 20%;
+}
+
+.help-page .parameter-annotations {
+   width: 20%;
+}
+
+.help-page h1,
+.help-page .h1 {
+   font-size: 36px;
+   line-height: normal;
+}
+
+.help-page h2,
+.help-page .h2 {
+   font-size: 30px;
+}
+
+.help-page h3,
+.help-page .h3 {
+   font-size: 18px;
+   font-weight: normal;
+}
+
+#body.help-page {
+   font-size: 14px;
+   line-height: 143%;
+   color: #4f4f4f;
+}
+
+.help-page a:link, .help-page a:active, .help-page a:hover, .help-page a:visited {
+   color: #09839d;
+   text-decoration: none;
+}

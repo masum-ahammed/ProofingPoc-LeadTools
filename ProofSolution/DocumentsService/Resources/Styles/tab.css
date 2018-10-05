@@ -1,0 +1,74 @@
+﻿/* **************************************************************/
+/* Copyright (c) 1991-2018 LEAD Technologies, Inc.              */
+/* All Rights Reserved.                                         */
+/* **************************************************************/
+.tab {
+   padding-top: 20px;
+   display: inline-block;
+   position: absolute;
+   overflow: hidden;
+   width: 90%;
+   color: #666666;
+   font-size: 13px;
+   font-family: Roboto,sans-serif;
+   margin-left: 5%;
+}
+
+.tabs {
+   display: table;
+   position: relative;
+   overflow: hidden;
+   margin: 0px;
+   padding: 0px;
+}
+
+   .tabs li {
+      float: left;
+      line-height: 38px;
+      overflow: hidden;
+      padding: 0;
+      position: relative;
+   }
+
+   .tabs a {
+      background-color: #eeeeee;
+      border-bottom: 1px solid #fff;
+      color: #144c9c;
+      font-weight: 500;
+      display: block;
+      letter-spacing: 0;
+      outline: none;
+      padding: 0 20px;
+      text-decoration: none;
+      -webkit-transition: all 0.2s ease-in-out;
+      -moz-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
+      border-bottom: 2px solid;
+      border-bottom-color: #144c9c;
+   }
+
+.tabs_item {
+   display: none;
+   padding: 30px 0;
+}
+
+   .tabs_item h4 {
+      font-weight: bold;
+      color: #87d3b7;
+      font-size: 20px;
+   }
+
+   .tabs_item img {
+      width: 200px;
+      float: left;
+      margin-right: 30px;
+   }
+
+   .tabs_item:first-child {
+      display: block;
+   }
+
+.current a {
+   color: #fff;
+   background: #144c9c;
+}

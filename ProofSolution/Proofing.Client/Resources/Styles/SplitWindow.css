@@ -1,0 +1,47 @@
+﻿/* **************************************************************/
+/* Copyright (c) 1991-2018 LEAD Technologies, Inc.              */
+/* All Rights Reserved.                                         */
+/* **************************************************************/
+.SplitWindow {
+   width: 100%;
+   position: fixed;
+   top: 105px;
+   bottom: 0px;
+}
+
+   .SplitWindow > div {
+      height: 100%;
+      overflow: auto;
+      -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+      -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; /* Opera/IE 8+ */
+   }
+
+.LeftPane {
+   float: left;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+   box-sizing: border-box; /* Opera/IE 8+ */
+   width: 150px;
+   z-index: 5;
+}
+
+.RightPane {
+   width: 50%;
+   float: left;
+   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+   box-sizing: border-box; /* Opera/IE 8+ */
+   z-index: 5;
+   overflow: hidden !important;
+}
+
+.Splitter {
+   float: left;
+   width: 3px;
+   border-left: 1px solid;
+   border-right: 1px solid;
+   border-color: lightgray;
+   cursor: w-resize;
+   z-index: 25;
+}

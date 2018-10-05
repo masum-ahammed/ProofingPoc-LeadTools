@@ -1,0 +1,218 @@
+/* Apply this class to your notification group root */
+.lt-notify-root {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  font-size: 80%;
+}
+
+.lt-notify-container {
+  /* May need to modify to become position: relative */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 15px 0;
+}
+
+.lt-notify {
+  display: block;
+  position: relative;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  float: right;
+  clear: both;
+  transition: right 0.5s cubic-bezier(0.45, 0, 0, 1), opacity 1.3s cubic-bezier(0.45, 0, 0, 1);
+  opacity: .2;
+  overflow: auto;
+}
+
+.lt-notify .lt-notify-inner {
+  position: relative;
+  min-width: 80px;
+  max-width: 260px;
+  max-height: 0;
+  float: right;
+  transition: all 0.3s cubic-bezier(0.45, 0, 0, 1);
+  transition-property: max-height, margin-top, margin-bottom;
+  border: none;
+  border-radius: 4px;
+  background-color: #e3e6ea;
+  color: #93a7b9;
+  box-shadow: 0 8px 20px 0px rgba(44, 168, 223, 0.1);
+  margin: 0 30px 0 0;
+  overflow: hidden;
+  line-height: 1em;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.lt-notify.lt-notify-ready .lt-notify-inner {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  max-height: 200px;
+}
+
+.lt-notify.lt-notify-show {
+  right: 0;
+  opacity: 1;
+}
+
+.lt-notify .lt-notify-header-border {
+  margin: 7.5px 25px;
+  margin-bottom: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.lt-notify .lt-notify-header {
+  display: inline-block;
+  margin: 0;
+  padding: 8px 0;
+  font-weight: lighter;
+  text-transform: uppercase;
+  border-bottom: 1px solid white;
+  letter-spacing: 1px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.lt-notify .lt-notify-message {
+  padding: 0;
+  margin: 15px 25px;
+  margin-bottom: 0;
+  text-align: center;
+  line-height: 17px;
+}
+
+.lt-notify .lt-notify-time, .lt-notify .lt-notify-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 6px;
+  font-size: 1.2em;
+  text-align: right;
+  cursor: pointer;
+}
+
+.lt-notify .lt-notify-time {
+  display: none;
+}
+
+.lt-notify .lt-notify-close {
+  display: none;
+}
+
+.lt-notify:not(.lt-notify-no-time) .lt-notify-inner:hover .lt-notify-time {
+  display: block;
+}
+
+.lt-notify.lt-notify-no-time .lt-notify-time {
+  display: none;
+}
+
+.lt-notify.lt-notify-no-time .lt-notify-close {
+  display: block;
+}
+
+.lt-notify .lt-notify-controls-button {
+  border: none;
+  font-weight: bold;
+  margin: 15px 25px;
+  padding: 0 5px;
+  vertical-align: super;
+  cursor: pointer;
+  border-radius: 2px;
+  background-image: url("../Images/Icons/notify-more.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 10px;
+}
+
+.lt-notify .lt-notify-controls-button:hover {
+  opacity: .7;
+}
+
+.lt-notify .lt-notify-controls {
+  display: none;
+  margin: 15px 25px;
+}
+
+.lt-notify.lt-notify-show-controls .lt-notify-controls {
+  display: block;
+}
+
+.lt-notify.lt-notify-show-controls .lt-notify-controls-button {
+  display: none;
+}
+
+.lt-notify .lt-notify-check-holder {
+  margin: 6px 0;
+  font-size: 0;
+}
+
+.lt-notify .lt-notify-check-holder > input {
+  vertical-align: top;
+  display: inline-block;
+  margin: 0;
+}
+
+.lt-notify .lt-notify-label {
+  vertical-align: top;
+  display: inline-block;
+  font-size: 11px;
+  padding-left: 6px;
+  cursor: pointer;
+  line-height: 13px;
+}
+
+.lt-notify label {
+  margin-bottom: 0;
+}
+
+.lt-notify input[type="checkbox"] {
+  display: none;
+}
+
+.lt-notify input[type="checkbox"] + label.lt-notify-label-special {
+  position: relative;
+  width: 13px;
+  height: 13px;
+  border: 1px solid #93a7b9;
+  border-radius: 1px;
+  vertical-align: middle;
+}
+
+.lt-notify input[type="checkbox"] + label.lt-notify-label-special::before {
+  display: inline-block;
+  position: relative;
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+  margin: 2px;
+  background-color: transparent;
+  content: " ";
+  cursor: pointer;
+}
+
+.lt-notify input[type="checkbox"]:checked + label.lt-notify-label-special::before {
+  background-color: #93a7b9;
+}
+
+.lt-notify input[type="checkbox"]:disabled + label.lt-notify-label-special::before {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: #eee;
+  content: " ";
+  cursor: not-allowed;
+}
+
+.lt-notify input[type="checkbox"] + label.lt-notify-label-special:hover::before {
+  background-color: #c1cdd7;
+}

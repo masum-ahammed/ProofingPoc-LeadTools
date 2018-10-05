@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<leadtools_cache>
+   <cache>
+      <type>Leadtools.Caching.FileCache, Leadtools.Caching, Version=20.0.4.0, Culture=neutral, PublicKeyToken=9cf889f53ea9b907</type>
+      <values>
+         <!-- Serialization Mode: JSON -->
+         <value key="policy_serialization_mode" value="2" />
+         <value key="data_serialization_mode" value="2" />
+         <value key="cache_directory" value="./cache" />
+         <value key="access_timeout" value="5000" />
+      </values>
+   </cache>
+</leadtools_cache>

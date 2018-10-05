@@ -1,0 +1,612 @@
+﻿/* **************************************************************/
+/* Copyright (c) 1991-2018 LEAD Technologies, Inc.              */
+/* All Rights Reserved.                                         */
+/* **************************************************************/
+/* About Icon */
+.icon-ann-about {
+   background-image: url("../Images/Icons/ann-about.svg");
+}
+
+   .icon-ann-about:enabled:hover, .icon-ann-about.checked {
+      background-image: url("../Images/Icons/ann-about-hover.svg"), url("../Images/Icons/ann-about.svg");
+   }
+
+/* Align Icon */
+.icon-ann-align {
+   background-image: url("../Images/Icons/ann-align.svg");
+}
+
+   .icon-ann-align:enabled:hover, .icon-ann-align.checked {
+      background-image: url("../Images/Icons/ann-align-hover.svg"), url("../Images/Icons/ann-align.svg");
+   }
+
+/* Bates Icon */
+.icon-ann-bates {
+   background-image: url("../Images/Icons/ann-bates.svg");
+}
+
+   .icon-ann-bates:enabled:hover, .icon-ann-bates.checked {
+      background-image: url("../Images/Icons/ann-bates-hover.svg"), url("../Images/Icons/ann-bates.svg");
+   }
+
+/* Burn Icon */
+.icon-ann-burn {
+   background-image: url("../Images/Icons/ann-burn.svg");
+}
+
+   .icon-ann-burn:enabled:hover, .icon-ann-burn.checked {
+      background-image: url("../Images/Icons/ann-burn-hover.svg"), url("../Images/Icons/ann-burn.svg");
+   }
+
+/* Document Dialog Icon */
+.icon-ann-dialog-document {
+   background-image: url("../Images/Icons/ann-dialog-document.svg");
+}
+
+   .icon-ann-dialog-document:enabled:hover, .icon-ann-dialog-document.checked {
+      background-image: url("../Images/Icons/ann-dialog-document-hover.svg"), url("../Images/Icons/ann-dialog-document.svg");
+   }
+
+/* Medical Dialog Icon */
+.icon-ann-dialog-medical {
+   background-image: url("../Images/Icons/ann-dialog-medical.svg");
+}
+
+   .icon-ann-dialog-medical:enabled:hover, .icon-ann-dialog-medical.checked {
+      background-image: url("../Images/Icons/ann-dialog-medical-hover.svg"), url("../Images/Icons/ann-dialog-medical.svg");
+   }
+
+/* Document Pack Cobb Angle Icon */
+.ann-icon-medical-cobb {
+   background-image: url("../Images/Icons/ann-medical-cobb.svg");
+}
+
+/* Document Pack Four Parallel Lines Icon */
+.ann-icon-medical-four-parallel {
+   background-image: url("../Images/Icons/ann-medical-four-parallel.svg");
+}
+
+/* Document Pack Intersection Lines Icon */
+.ann-icon-medical-intersection-lines {
+   background-image: url("../Images/Icons/ann-medical-intersection-lines.svg");
+}
+
+/* Document Pack Mid Lines Icon */
+.ann-icon-medical-mid-lines {
+   background-image: url("../Images/Icons/ann-medical-mid-lines.svg");
+}
+
+/* Document Pack Norberg Icon */
+.ann-icon-medical-norberg {
+   background-image: url("../Images/Icons/ann-medical-norberg.svg");
+}
+
+/* Document Pack Snap Line Icon */
+.ann-icon-medical-snap-line {
+   background-image: url("../Images/Icons/ann-medical-snap-line.svg");
+}
+
+/* Document Pack Two Parallel Lines Icon */
+.ann-icon-medical-two-parallel {
+   background-image: url("../Images/Icons/ann-medical-two-parallel.svg");
+}
+
+/* Decrypt Icon */
+.icon-ann-decrypt {
+   background-image: url("../Images/Icons/ann-decrypt.svg");
+}
+
+   .icon-ann-decrypt:enabled:hover, .icon-ann-decrypt.checked {
+      background-image: url("../Images/Icons/ann-decrypt-hover.svg"), url("../Images/Icons/ann-decrypt.svg");
+   }
+
+/* Delete Icon */
+.icon-ann-delete {
+   background-image: url("../Images/Icons/ann-delete.svg");
+}
+
+   .icon-ann-delete:enabled:hover, .icon-ann-delete.checked {
+      background-image: url("../Images/Icons/ann-delete-hover.svg"), url("../Images/Icons/ann-delete.svg");
+   }
+
+/* Duplicate Icon */
+.icon-ann-duplicate {
+   background-image: url("../Images/Icons/ann-duplicate.svg");
+}
+
+   .icon-ann-duplicate:enabled:hover, .icon-ann-duplicate.checked {
+      background-image: url("../Images/Icons/ann-duplicate-hover.svg"), url("../Images/Icons/ann-duplicate.svg");
+   }
+
+/* Redo Icon */
+.icon-ann-edit-redo {
+   background-image: url("../Images/Icons/ann-edit-redo.svg");
+}
+
+   .icon-ann-edit-redo:enabled:hover, .icon-ann-edit-redo.checked {
+      background-image: url("../Images/Icons/ann-edit-redo-hover.svg"), url("../Images/Icons/ann-edit-redo.svg");
+   }
+
+/* Undo Icon */
+.icon-ann-edit-undo {
+   background-image: url("../Images/Icons/ann-edit-undo.svg");
+}
+
+   .icon-ann-edit-undo:enabled:hover, .icon-ann-edit-undo.checked {
+      background-image: url("../Images/Icons/ann-edit-undo-hover.svg"), url("../Images/Icons/ann-edit-undo.svg");
+   }
+
+/* Encrypt Icon */
+.icon-ann-encrypt {
+   background-image: url("../Images/Icons/ann-encrypt.svg");
+}
+
+   .icon-ann-encrypt:enabled:hover, .icon-ann-encrypt.checked {
+      background-image: url("../Images/Icons/ann-encrypt-hover.svg"), url("../Images/Icons/ann-encrypt.svg");
+   }
+
+/* Open File Icon */
+.icon-ann-file-open {
+   background-image: url("../Images/Icons/ann-file-open.svg");
+}
+
+   .icon-ann-file-open:enabled:hover, .icon-ann-file-open.checked {
+      background-image: url("../Images/Icons/ann-file-open-hover.svg"), url("../Images/Icons/ann-file-open.svg");
+   }
+
+/* Open Annotations File Icon */
+.icon-ann-file-open-ann {
+   background-image: url("../Images/Icons/ann-file-open-ann.svg");
+}
+
+   .icon-ann-file-open-ann:enabled:hover, .icon-ann-file-open-ann.checked {
+      background-image: url("../Images/Icons/ann-file-open-ann-hover.svg"), url("../Images/Icons/ann-file-open-ann.svg");
+   }
+
+/* Save Icon */
+.icon-ann-file-save {
+   background-image: url("../Images/Icons/ann-file-save.svg");
+}
+
+   .icon-ann-file-save:enabled:hover, .icon-ann-file-save.checked {
+      background-image: url("../Images/Icons/ann-file-save-hover.svg"), url("../Images/Icons/ann-file-save.svg");
+   }
+
+/* Save Annotations as XML Icon */
+.icon-ann-file-save-xml {
+   background-image: url("../Images/Icons/ann-file-save-xml.svg");
+}
+
+   .icon-ann-file-save-xml:enabled:hover, .icon-ann-file-save-xml.checked {
+      background-image: url("../Images/Icons/ann-file-save-xml-hover.svg"), url("../Images/Icons/ann-file-save-xml.svg");
+   }
+
+/* Lock Icon */
+.icon-ann-lock {
+   background-image: url("../Images/Icons/ann-lock.svg");
+}
+
+   .icon-ann-lock:enabled:hover, .icon-ann-lock.checked {
+      background-image: url("../Images/Icons/ann-lock-hover.svg"), url("../Images/Icons/ann-lock.svg");
+   }
+
+/* Unlock Icon */
+.icon-ann-lock-undo {
+   background-image: url("../Images/Icons/ann-lock-undo.svg");
+}
+
+   .icon-ann-lock-undo:enabled:hover, .icon-ann-lock-undo.checked {
+      background-image: url("../Images/Icons/ann-lock-undo-hover.svg"), url("../Images/Icons/ann-lock-undo.svg");
+   }
+
+/* Document Pack Sticky Note Icon */
+.ann-icon-document-sticky-note {
+   background-image: url("../Images/Icons/ann-document-sticky-note.svg");
+}
+
+/* Document Pack Text Hilite Icon */
+.ann-icon-document-text-hilite {
+   background-image: url("../Images/Icons/ann-document-text-hilite.svg");
+}
+
+/* Document Pack Text Redaction Icon */
+.ann-icon-document-text-redact {
+   background-image: url("../Images/Icons/ann-document-text-redact.svg");
+}
+
+/* Document Pack Text Strikethrough Icon */
+.ann-icon-document-text-strike {
+   background-image: url("../Images/Icons/ann-document-text-strike.svg");
+}
+
+/* Document Pack Text Underline Icon */
+.ann-icon-document-text-underline {
+   background-image: url("../Images/Icons/ann-document-text-underline.svg");
+}
+
+/* PanZoom Icon */
+.icon-ann-mode-panzoom {
+   background-image: url("../Images/Icons/ann-mode-panzoom.svg");
+}
+
+   .icon-ann-mode-panzoom:enabled:hover, .icon-ann-mode-panzoom.checked:enabled, .icon-ann-mode-panzoom.checked {
+      background-image: url("../Images/Icons/ann-mode-panzoom-hover.svg"), url("../Images/Icons/ann-mode-panzoom.svg");
+   }
+
+/* Select Icon */
+.icon-ann-mode-select {
+   background-image: url("../Images/Icons/ann-mode-select.svg");
+}
+
+   .icon-ann-mode-select:enabled:hover, .icon-ann-mode-select.checked:hover, .icon-ann-mode-select.checked {
+      background-image: url("../Images/Icons/ann-mode-select-hover.svg"), url("../Images/Icons/ann-mode-select.svg");
+   }
+
+/* Audio Object Icon */
+.icon-ann-ob-audio {
+   background-image: url("../Images/Icons/ann-ob-audio.svg");
+}
+
+   .icon-ann-ob-audio:enabled:hover, .icon-ann-ob-audio.checked, .icon-ann-ob-audio.checked {
+      background-image: url("../Images/Icons/ann-ob-audio-hover.svg"), url("../Images/Icons/ann-ob-audio.svg");
+   }
+
+/* Cross Product Object Icon */
+.icon-ann-ob-cross-product {
+   background-image: url("../Images/Icons/ann-ob-cross-product.svg");
+}
+
+   .icon-ann-ob-cross-product:enabled:hover, .icon-ann-ob-cross-product.checked {
+      background-image: url("../Images/Icons/ann-ob-cross-product-hover.svg"), url("../Images/Icons/ann-ob-cross-product.svg");
+   }
+
+/* Custom Rich Text Object Icon */
+.icon-ann-ob-custom-rich-text {
+   background-image: url("../Images/Icons/ann-ob-custom-rich-text.svg");
+}
+
+   .icon-ann-ob-custom-rich-text:enabled:hover, .icon-ann-ob-custom-rich-text.checked {
+      background-image: url("../Images/Icons/ann-ob-custom-rich-text-hover.svg"), url("../Images/Icons/ann-ob-custom-rich-text.svg");
+   }
+
+/* Custom Triangle Object Icon */
+.icon-ann-ob-custom-triangle {
+   background-image: url("../Images/Icons/ann-ob-custom-triangle.svg");
+}
+
+   .icon-ann-ob-custom-triangle:enabled:hover, .icon-ann-ob-custom-triangle.checked {
+      background-image: url("../Images/Icons/ann-ob-custom-triangle-hover.svg"), url("../Images/Icons/ann-ob-custom-triangle.svg");
+   }
+
+/* Freehand Object Icon */
+.icon-ann-ob-freehand {
+   background-image: url("../Images/Icons/ann-ob-freehand.svg");
+}
+
+   .icon-ann-ob-freehand:enabled:hover, .icon-ann-ob-freehand.checked {
+      background-image: url("../Images/Icons/ann-ob-freehand-hover.svg"), url("../Images/Icons/ann-ob-freehand.svg");
+   }
+
+/* Hilite Object Icon */
+.icon-ann-ob-hilite {
+   background-image: url("../Images/Icons/ann-ob-hilite.svg");
+}
+
+   .icon-ann-ob-hilite:enabled:hover, .icon-ann-ob-hilite.checked {
+      background-image: url("../Images/Icons/ann-ob-hilite-hover.svg"), url("../Images/Icons/ann-ob-hilite.svg");
+   }
+
+/* Hotspot Object Icon */
+.icon-ann-ob-hotspot {
+   background-image: url("../Images/Icons/ann-ob-hotspot.svg");
+}
+
+   .icon-ann-ob-hotspot:enabled:hover, .icon-ann-ob-hotspot.checked {
+      background-image: url("../Images/Icons/ann-ob-hotspot-hover.svg"), url("../Images/Icons/ann-ob-hotspot.svg");
+   }
+
+/* Freehand Hotspot Object Icon */
+.icon-ann-ob-hotspot-freehand {
+   background-image: url("../Images/Icons/ann-ob-hotspot-freehand.svg");
+}
+
+   .icon-ann-ob-hotspot-freehand:enabled:hover, .icon-ann-ob-hotspot-freehand.checked {
+      background-image: url("../Images/Icons/ann-ob-hotspot-freehand-hover.svg"), url("../Images/Icons/ann-ob-hotspot-freehand.svg");
+   }
+
+/* Note Object Icon */
+.icon-ann-ob-note {
+   background-image: url("../Images/Icons/ann-ob-note.svg");
+}
+
+   .icon-ann-ob-note:enabled:hover, .icon-ann-ob-note.checked {
+      background-image: url("../Images/Icons/ann-ob-note-hover.svg"), url("../Images/Icons/ann-ob-note.svg");
+   }
+
+/* Pin Object Icon */
+.icon-ann-ob-pin {
+   background-image: url("../Images/Icons/ann-ob-pin.svg");
+}
+
+   .icon-ann-ob-pin:enabled:hover, .icon-ann-ob-pin.checked {
+      background-image: url("../Images/Icons/ann-ob-pin-hover.svg"), url("../Images/Icons/ann-ob-pin.svg");
+   }
+
+/* Point Object Icon */
+.icon-ann-ob-point {
+   background-image: url("../Images/Icons/ann-ob-point.svg");
+}
+
+   .icon-ann-ob-point:enabled:hover, .icon-ann-ob-point.checked {
+      background-image: url("../Images/Icons/ann-ob-point-hover.svg"), url("../Images/Icons/ann-ob-point.svg");
+   }
+
+/* Pointer Object Icon */
+.icon-ann-ob-pointer {
+   background-image: url("../Images/Icons/ann-ob-pointer.svg");
+}
+
+   .icon-ann-ob-pointer:enabled:hover, .icon-ann-ob-pointer.checked {
+      background-image: url("../Images/Icons/ann-ob-pointer-hover.svg"), url("../Images/Icons/ann-ob-pointer.svg");
+   }
+
+/* Polyruler Object Icon */
+.icon-ann-ob-polyruler {
+   background-image: url("../Images/Icons/ann-ob-polyruler.svg");
+}
+
+   .icon-ann-ob-polyruler:enabled:hover, .icon-ann-ob-polyruler.checked {
+      background-image: url("../Images/Icons/ann-ob-polyruler-hover.svg"), url("../Images/Icons/ann-ob-polyruler.svg");
+   }
+
+/* Protractor Object Icon */
+.icon-ann-ob-protractor {
+   background-image: url("../Images/Icons/ann-ob-protractor.svg");
+}
+
+   .icon-ann-ob-protractor:enabled:hover, .icon-ann-ob-protractor.checked {
+      background-image: url("../Images/Icons/ann-ob-protractor-hover.svg"), url("../Images/Icons/ann-ob-protractor.svg");
+   }
+
+/* Redaction Object Icon */
+.icon-ann-ob-redaction {
+   background-image: url("../Images/Icons/ann-ob-redaction.svg");
+}
+
+   .icon-ann-ob-redaction:enabled:hover, .icon-ann-ob-redaction.checked {
+      background-image: url("../Images/Icons/ann-ob-redaction-hover.svg"), url("../Images/Icons/ann-ob-redaction.svg");
+   }
+
+/* Rubberstamp Object Icon */
+.icon-ann-ob-rubberstamp {
+   background-image: url("../Images/Icons/ann-ob-rubberstamp.svg");
+}
+
+   .icon-ann-ob-rubberstamp:enabled:hover, .icon-ann-ob-rubberstamp.checked {
+      background-image: url("../Images/Icons/ann-ob-rubberstamp-hover.svg"), url("../Images/Icons/ann-ob-rubberstamp.svg");
+   }
+
+/* Ruler Object Icon */
+.icon-ann-ob-ruler {
+   background-image: url("../Images/Icons/ann-ob-ruler.svg");
+}
+
+   .icon-ann-ob-ruler:enabled:hover, .icon-ann-ob-ruler.checked {
+      background-image: url("../Images/Icons/ann-ob-ruler-hover.svg"), url("../Images/Icons/ann-ob-ruler.svg");
+   }
+
+/* Stamp Object Icon */
+.icon-ann-ob-stamp {
+   background-image: url("../Images/Icons/ann-ob-stamp.svg");
+}
+
+   .icon-ann-ob-stamp:enabled:hover, .icon-ann-ob-stamp.checked {
+      background-image: url("../Images/Icons/ann-ob-stamp-hover.svg"), url("../Images/Icons/ann-ob-stamp.svg");
+   }
+
+/* Sticky Note Object Icon */
+.icon-ann-ob-sticky {
+   background-image: url("../Images/Icons/ann-ob-sticky.svg");
+}
+
+   .icon-ann-ob-sticky:enabled:hover, .icon-ann-ob-sticky.checked {
+      background-image: url("../Images/Icons/ann-ob-sticky-hover.svg"), url("../Images/Icons/ann-ob-sticky.svg");
+   }
+
+/* Text Object Icon */
+.icon-ann-ob-text {
+   background-image: url("../Images/Icons/ann-ob-text.svg");
+}
+
+   .icon-ann-ob-text:enabled:hover, .icon-ann-ob-text.checked {
+      background-image: url("../Images/Icons/ann-ob-text-hover.svg"), url("../Images/Icons/ann-ob-text.svg");
+   }
+
+/* Text Pointer Object Icon */
+.icon-ann-ob-text-pointer {
+   background-image: url("../Images/Icons/ann-ob-text-pointer.svg");
+}
+
+   .icon-ann-ob-text-pointer:enabled:hover, .icon-ann-ob-text-pointer.checked {
+      background-image: url("../Images/Icons/ann-ob-text-pointer-hover.svg"), url("../Images/Icons/ann-ob-text-pointer.svg");
+   }
+
+/* Text Strikethrough Object Icon */
+.icon-ann-ob-text-strike {
+   background-image: url("../Images/Icons/ann-ob-text-strike.svg");
+}
+
+   .icon-ann-ob-text-strike:enabled:hover, .icon-ann-ob-text-strike.checked {
+      background-image: url("../Images/Icons/ann-ob-text-strike-hover.svg"), url("../Images/Icons/ann-ob-text-strike.svg");
+   }
+
+/* Text Underline Object Icon */
+.icon-ann-ob-text-underline {
+   background-image: url("../Images/Icons/ann-ob-text-underline.svg");
+}
+
+   .icon-ann-ob-text-underline:enabled:hover, .icon-ann-ob-text-underline.checked {
+      background-image: url("../Images/Icons/ann-ob-text-underline-hover.svg"), url("../Images/Icons/ann-ob-text-underline.svg");
+   }
+
+/* Video Object Icon */
+.icon-ann-ob-video {
+   background-image: url("../Images/Icons/ann-ob-video.svg");
+}
+
+   .icon-ann-ob-video:enabled:hover, .icon-ann-ob-video.checked {
+      background-image: url("../Images/Icons/ann-ob-video-hover.svg"), url("../Images/Icons/ann-ob-video.svg");
+   }
+
+/* Properties Icon */
+.icon-ann-properties {
+   background-image: url("../Images/Icons/ann-properties.svg");
+}
+
+   .icon-ann-properties:enabled:hover, .icon-ann-properties.checked {
+      background-image: url("../Images/Icons/ann-properties-hover.svg"), url("../Images/Icons/ann-properties.svg");
+   }
+
+/* Redact Realize Icon */
+.icon-ann-redact {
+   background-image: url("../Images/Icons/ann-redact.svg");
+}
+
+   .icon-ann-redact:enabled:hover, .icon-ann-redact.checked {
+      background-image: url("../Images/Icons/ann-redact-hover.svg"), url("../Images/Icons/ann-redact.svg");
+   }
+
+/* Redact Remove Icon */
+.icon-ann-redact-remove {
+   background-image: url("../Images/Icons/ann-redact-remove.svg");
+}
+
+   .icon-ann-redact-remove:enabled:hover, .icon-ann-redact-remove.checked {
+      background-image: url("../Images/Icons/ann-redact-remove-hover.svg"), url("../Images/Icons/ann-redact-remove.svg");
+   }
+
+/* B-Spline Shape Icon */
+.icon-ann-shape-b-spline {
+   background-image: url("../Images/Icons/ann-shape-b-spline.svg");
+}
+
+   .icon-ann-shape-b-spline:enabled:hover, .icon-ann-shape-b-spline.checked {
+      background-image: url("../Images/Icons/ann-shape-b-spline-hover.svg"), url("../Images/Icons/ann-shape-b-spline.svg");
+   }
+
+/* Curve Shape Icon */
+.icon-ann-shape-curve {
+   background-image: url("../Images/Icons/ann-shape-curve.svg");
+}
+
+   .icon-ann-shape-curve:enabled:hover, .icon-ann-shape-curve.checked {
+      background-image: url("../Images/Icons/ann-shape-curve-hover.svg"), url("../Images/Icons/ann-shape-curve.svg");
+   }
+
+/* Ellipse Shape Icon */
+.icon-ann-shape-ellipse {
+   background-image: url("../Images/Icons/ann-shape-ellipse.svg");
+}
+
+   .icon-ann-shape-ellipse:enabled:hover, .icon-ann-shape-ellipse.checked {
+      background-image: url("../Images/Icons/ann-shape-ellipse-hover.svg"), url("../Images/Icons/ann-shape-ellipse.svg");
+   }
+
+/* Line Shape Icon */
+.icon-ann-shape-line {
+   background-image: url("../Images/Icons/ann-shape-line.svg");
+}
+
+   .icon-ann-shape-line:enabled:hover, .icon-ann-shape-line.checked {
+      background-image: url("../Images/Icons/ann-shape-line-hover.svg"), url("../Images/Icons/ann-shape-line.svg");
+   }
+
+/* Polygon Shape Icon */
+.icon-ann-shape-polygon {
+   background-image: url("../Images/Icons/ann-shape-polygon.svg");
+}
+
+   .icon-ann-shape-polygon:enabled:hover, .icon-ann-shape-polygon.checked {
+      background-image: url("../Images/Icons/ann-shape-polygon-hover.svg"), url("../Images/Icons/ann-shape-polygon.svg");
+   }
+
+/* Polyline Shape Icon */
+.icon-ann-shape-polyline {
+   background-image: url("../Images/Icons/ann-shape-polyline.svg");
+}
+
+   .icon-ann-shape-polyline:enabled:hover, .icon-ann-shape-polyline.checked {
+      background-image: url("../Images/Icons/ann-shape-polyline-hover.svg"), url("../Images/Icons/ann-shape-polyline.svg");
+   }
+
+/* Rectangle Shape Icon */
+.icon-ann-shape-rectangle {
+   background-image: url("../Images/Icons/ann-shape-rectangle.svg");
+}
+
+   .icon-ann-shape-rectangle:enabled:hover, .icon-ann-shape-rectangle.checked {
+      background-image: url("../Images/Icons/ann-shape-rectangle-hover.svg"), url("../Images/Icons/ann-shape-rectangle.svg");
+   }
+
+/* Run Icon */
+.icon-ann-state-run {
+   background-image: url("../Images/Icons/ann-state-run.svg");
+}
+
+   .icon-ann-state-run:enabled:hover, .icon-ann-state-run.checked {
+      background-image: url("../Images/Icons/ann-state-run-hover.svg"), url("../Images/Icons/ann-state-run.svg");
+   }
+
+/* Stop (Design) Icon */
+.icon-ann-state-stop {
+   background-image: url("../Images/Icons/ann-state-stop.svg");
+}
+
+   .icon-ann-state-stop:enabled:hover, .icon-ann-state-stop.checked {
+      background-image: url("../Images/Icons/ann-state-stop-hover.svg"), url("../Images/Icons/ann-state-stop.svg");
+   }
+
+/* Align Bottom Icon */
+.icon-object-align-bottom {
+   background-image: url("../Images/Icons/object-align-bottom.svg");
+}
+
+/* Align Center Icon */
+.icon-object-align-center {
+   background-image: url("../Images/Icons/object-align-center.svg");
+}
+
+/* Align Left Icon */
+.icon-object-align-left {
+   background-image: url("../Images/Icons/object-align-left.svg");
+}
+
+/* Align Middle Icon */
+.icon-object-align-middle {
+   background-image: url("../Images/Icons/object-align-middle.svg");
+}
+
+/* Align Right Icon */
+.icon-object-align-right {
+   background-image: url("../Images/Icons/object-align-right.svg");
+}
+
+/* Align Top Icon */
+.icon-object-align-top {
+   background-image: url("../Images/Icons/object-align-top.svg");
+}
+
+/* Same Height Icon */
+.icon-object-same-height {
+   background-image: url("../Images/Icons/object-same-height.svg");
+}
+
+/* Same Size Icon */
+.icon-object-same-size {
+   background-image: url("../Images/Icons/object-same-size.svg");
+}
+
+/* Same Width Icon */
+.icon-object-same-width {
+   background-image: url("../Images/Icons/object-same-width.svg");
+}

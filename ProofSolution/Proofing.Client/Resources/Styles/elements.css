@@ -1,0 +1,89 @@
+﻿/* **************************************************************/
+/* Copyright (c) 1991-2018 LEAD Technologies, Inc.              */
+/* All Rights Reserved.                                         */
+/* **************************************************************/
+.group-box {
+   position: relative;
+   padding-bottom: 20px;
+}
+
+   .group-box > span:after {
+      content: "";
+      width: 100%;
+      border-top: 1px solid;
+      border-top-color: lightgray;
+      position: absolute;
+      margin-left: 5px;
+      margin-top: 10px;
+   }
+
+   .group-box > div {
+      padding-top: 10px;
+   }
+
+.row {
+   max-width: 100%;
+   position: relative;
+}
+
+   .row > div {
+      display: inline-block;
+      margin-right: 5px;
+   }
+
+.control-group {
+   display: table;
+   width: 99%;
+}
+
+   .control-group input,
+   .control-group select {
+      border: 1px solid #bbb;
+      border-radius: 4px;
+      display: table-cell;
+      width: 100%;
+      border-radius: 0;
+      height: 28px;
+   }
+
+   .control-group select {
+      box-sizing: content-box;
+      padding: 1px 0px;
+   }
+
+      .control-group input:focus,
+      .control-group select:focus {
+         outline-color: transparent;
+         outline-style: none;
+      }
+
+.addon {
+   display: table-cell;
+   width: 1px;
+   white-space: nowrap;
+   background: #eeeeee;
+   padding: 0 8px;
+   border: 1px solid #bbb;
+}
+
+   .addon:first-child {
+      border-right: none;
+   }
+
+   .addon:last-child {
+      border-left: none;
+   }
+
+   .addon:first-child,
+   .control-group input:first-child,
+   .control-group select:first-child {
+      border-top-left-radius: 4px;
+      border-bottom-left-radius: 4px;
+   }
+
+   .addon:last-child,
+   .control-group input:last-child,
+   .control-group select:last-child {
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+   }

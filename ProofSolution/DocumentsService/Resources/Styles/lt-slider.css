@@ -1,0 +1,59 @@
+.lt-slider {
+  display: inline-block;
+  font-size: 0;
+  height: 100%;
+  width: 100%;
+  vertical-align: top;
+}
+
+.lt-slider .lt-slider-left,
+.lt-slider .lt-slider-right {
+  display: none;
+  border: none;
+  width: 35px;
+  cursor: pointer;
+  text-align: center;
+  background-size: cover;
+  font-size: initial;
+  vertical-align: top;
+}
+
+.lt-slider .lt-slider-left.lt-slider-button-disabled,
+.lt-slider .lt-slider-right.lt-slider-button-disabled {
+  pointer-events: none;
+}
+
+.lt-slider.lt-slider-buttons-on .lt-slider-left, .lt-slider.lt-slider-buttons-on .lt-slider-right {
+  display: inline-block;
+  height: 100%;
+}
+
+.lt-slider .lt-slider-view {
+  height: 100%;
+  width: calc(100% - 70px);
+  display: inline-block;
+  font-size: initial;
+  white-space: nowrap;
+  overflow-y: hidden;
+  /*overflow-x: hidden;*/
+  overflow-x: auto;
+  vertical-align: top;
+  /* Create the iOS momentum scroll */
+  -webkit-overflow-scrolling: touch;
+}
+
+.lt-slider .lt-slider-list {
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-y: hidden;
+}
+
+.lt-slider .lt-slider-list > li {
+  display: inline-block;
+  font-size: initial;
+  text-align: center;
+  position: relative;
+}

@@ -1,0 +1,753 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7BCCC0B8-4C3E-4739-9DB7-758B1DA7132B}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Proofing.Client</RootNamespace>
+    <AssemblyName>Proofing.Client</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Common\Leadtools.Annotations.Automation.js" />
+    <Content Include="Common\Leadtools.Annotations.BatesStamp.js" />
+    <Content Include="Common\Leadtools.Annotations.Designers.js" />
+    <Content Include="Common\Leadtools.Annotations.Engine.js" />
+    <Content Include="Common\Leadtools.Annotations.Rendering.JavaScript.js" />
+    <Content Include="Common\Leadtools.Annotations.UserMedicalPack.js" />
+    <Content Include="Common\Leadtools.Controls.js" />
+    <Content Include="Common\Leadtools.Controls.Medical.js" />
+    <Content Include="Common\Leadtools.Demos.Annotations.js" />
+    <Content Include="Common\Leadtools.Demos.Basic.js" />
+    <Content Include="Common\Leadtools.Demos.js" />
+    <Content Include="Common\Leadtools.Document.js" />
+    <Content Include="Common\Leadtools.Document.Viewer.js" />
+    <Content Include="Common\Leadtools.ImageProcessing.Color.js" />
+    <Content Include="Common\Leadtools.ImageProcessing.Core.js" />
+    <Content Include="Common\Leadtools.ImageProcessing.Effects.js" />
+    <Content Include="Common\Leadtools.ImageProcessing.Main.js" />
+    <Content Include="Common\Leadtools.js" />
+    <Content Include="Common\Leadtools.Scanning.js" />
+    <Content Include="Common\pdfjs\lt.pdf.compatibility.js" />
+    <Content Include="Common\pdfjs\lt.pdf.js" />
+    <Content Include="Common\pdfjs\lt.pdf.worker.js" />
+    <Content Include="Common\spectrum\spectrum.js" />
+    <Content Include="Converter\Dialogs\AdvancedPdfOptionsDlg.js" />
+    <Content Include="Converter\Dialogs\DocumentConverterDlg.js" />
+    <Content Include="Converter\Dialogs\DocumentFormatOptionsDlg.js" />
+    <Content Include="Converter\Dialogs\SaveToDlg.js" />
+    <Content Include="Converter\DocumentConverterFormats.js" />
+    <Content Include="Dialogs\CustomRenderModeDlg.js" />
+    <Content Include="Dialogs\DocumentPropertiesDlg.js" />
+    <Content Include="Dialogs\DocumentViewerOptionsDlg.js" />
+    <Content Include="Dialogs\InputDlg.js" />
+    <Content Include="Dialogs\LinkValueDlg.js" />
+    <Content Include="Dialogs\LoadingDlg.js" />
+    <Content Include="Dialogs\OpenDocumentDlg.js" />
+    <Content Include="Dialogs\PageRotationDlg.js" />
+    <Content Include="Dialogs\PagesDlg.js" />
+    <Content Include="Dialogs\PrintDlg.js" />
+    <Content Include="Dialogs\ProcessingPagesDlg.js" />
+    <Content Include="DriveHelper\DriveHelper.js" />
+    <Content Include="DriveHelper\SharePointPickerDlg.js" />
+    <Content Include="DriveHelper\SharePointService.js" />
+    <Content Include="index.mobile.html" />
+    <Content Include="Main\CommandBinder.js" />
+    <Content Include="Main\Main.Annotations.js" />
+    <Content Include="Main\Main.Edit.js" />
+    <Content Include="Main\Main.File.js" />
+    <Content Include="Main\Main.Interactive.js" />
+    <Content Include="Main\Main.js" />
+    <Content Include="Main\Main.Page.js" />
+    <Content Include="Main\Main.Preferences.js" />
+    <Content Include="Main\Main.View.js" />
+    <Content Include="Resources\Cursors\Draw\SelectRectangle.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolAudio.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolButton.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolClosedCurve.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolCrossProduct.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolCurve.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolEllipse.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolEncrypt.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolFreehand.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolFreehandHotspot.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolHilite.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolHotspot.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolLine.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolNote.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolPoint.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolPointer.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolPolygon.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolPolyline.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolPolyruler.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolProtractor.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolRectangle.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolRedaction.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolRtf.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolRubberStamp.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolRuler.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolSelect.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolStamp.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolText.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolTextPointer.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolTextRollup.cur" />
+    <Content Include="Resources\Cursors\Draw\ToolVideo.cur" />
+    <Content Include="Resources\Cursors\Edit\Anchor.cur" />
+    <Content Include="Resources\Cursors\Edit\ControlPoint.cur" />
+    <Content Include="Resources\Cursors\Edit\Rotate.cur" />
+    <Content Include="Resources\Cursors\Edit\SelectedObject.cur" />
+    <Content Include="Resources\Cursors\Edit\SelectObject.cur" />
+    <Content Include="Resources\development.html" />
+    <Content Include="Resources\Images\Demos\AnnotationDemo.jpg" />
+    <Content Include="Resources\Images\Demos\BankCheckReaderDemo.jpg" />
+    <Content Include="Resources\Images\Demos\BarcodeDemo.jpg" />
+    <Content Include="Resources\Images\Demos\DocumentViewerDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ImageProcessingDemo.jpg" />
+    <Content Include="Resources\Images\Demos\MedicalWebViewerDemo.jpg" />
+    <Content Include="Resources\Images\Demos\MRTDReaderDemo.jpg" />
+    <Content Include="Resources\Images\Demos\OcrDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ScanningDemo.jpg" />
+    <Content Include="Resources\Images\Demos\SvgDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ThumbnailDemo.jpg" />
+    <Content Include="Resources\Images\Demos\ViewerDemo.jpg" />
+    <Content Include="Resources\Images\favicon.ico" />
+    <Content Include="Resources\Images\Icons\90DegreeRuler.png" />
+    <Content Include="Resources\Images\Icons\A.png" />
+    <Content Include="Resources\Images\Icons\AArrow.png" />
+    <Content Include="Resources\Images\Icons\actual.svg" />
+    <Content Include="Resources\Images\Icons\ActualSize.png" />
+    <Content Include="Resources\Images\Icons\ann-about-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-about.svg" />
+    <Content Include="Resources\Images\Icons\ann-align-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-align.svg" />
+    <Content Include="Resources\Images\Icons\ann-bates-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-bates.svg" />
+    <Content Include="Resources\Images\Icons\ann-burn-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-burn.svg" />
+    <Content Include="Resources\Images\Icons\ann-decrypt-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-decrypt.svg" />
+    <Content Include="Resources\Images\Icons\ann-delete-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-delete.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-document-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-document.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-medical-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-dialog-medical.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-sticky-note.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-hilite.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-redact.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-strike.svg" />
+    <Content Include="Resources\Images\Icons\ann-document-text-underline.svg" />
+    <Content Include="Resources\Images\Icons\ann-duplicate-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-duplicate.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-redo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-redo.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-undo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-edit-undo.svg" />
+    <Content Include="Resources\Images\Icons\ann-encrypt-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-encrypt.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-ann-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-ann.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-open.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-xml-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save-xml.svg" />
+    <Content Include="Resources\Images\Icons\ann-file-save.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-undo-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock-undo.svg" />
+    <Content Include="Resources\Images\Icons\ann-lock.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-cobb.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-four-parallel.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-intersection-lines.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-mid-lines.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-norberg.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-snap-line.svg" />
+    <Content Include="Resources\Images\Icons\ann-medical-two-parallel.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-panzoom-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-panzoom.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-select-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-mode-select.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-audio-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-audio.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-cross-product-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-cross-product.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-rich-text-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-rich-text.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-triangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-custom-triangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-freehand-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-freehand.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hilite-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hilite.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-freehand-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-freehand.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-hotspot.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-note-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-note.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pin-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pin.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-point-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-point.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pointer-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-pointer.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-polyruler-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-polyruler.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-protractor-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-protractor.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-redaction-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-redaction.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-rubberstamp-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-rubberstamp.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-ruler-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-ruler.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-stamp-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-stamp.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-sticky-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-sticky.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-pointer-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-pointer.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-strike-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-strike.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-underline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text-underline.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-text.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-video-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-ob-video.svg" />
+    <Content Include="Resources\Images\Icons\ann-properties-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-properties.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-remove-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact-remove.svg" />
+    <Content Include="Resources\Images\Icons\ann-redact.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-b-spline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-b-spline.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-curve-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-curve.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-ellipse-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-ellipse.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-line-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-line.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polygon-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polygon.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polyline-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-polyline.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-rectangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-rectangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-triangle-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-shape-triangle.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-run-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-run.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-stop-hover.svg" />
+    <Content Include="Resources\Images\Icons\ann-state-stop.svg" />
+    <Content Include="Resources\Images\Icons\Annotations.png" />
+    <Content Include="Resources\Images\Icons\ApplyDecryptor.png" />
+    <Content Include="Resources\Images\Icons\ApplyEncryptor.png" />
+    <Content Include="Resources\Images\Icons\arrow-box-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-left.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-box-right.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left-disabled.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-left.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right-disabled.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\arrow-slider-right.svg" />
+    <Content Include="Resources\Images\Icons\ArrowDown.png" />
+    <Content Include="Resources\Images\Icons\ArrowUp.png" />
+    <Content Include="Resources\Images\Icons\AutoGetText.png" />
+    <Content Include="Resources\Images\Icons\AutoPanMode.png" />
+    <Content Include="Resources\Images\Icons\Barcode.png" />
+    <Content Include="Resources\Images\Icons\Bookmarks.png" />
+    <Content Include="Resources\Images\Icons\Bottom-Align.png" />
+    <Content Include="Resources\Images\Icons\BSpline.png" />
+    <Content Include="Resources\Images\Icons\Burn.png" />
+    <Content Include="Resources\Images\Icons\Center-Align.png" />
+    <Content Include="Resources\Images\Icons\Circle.png" />
+    <Content Include="Resources\Images\Icons\ClearSelection.png" />
+    <Content Include="Resources\Images\Icons\Clockwise-Small.png" />
+    <Content Include="Resources\Images\Icons\Clockwise.png" />
+    <Content Include="Resources\Images\Icons\Close.png" />
+    <Content Include="Resources\Images\Icons\CobbAngle.png" />
+    <Content Include="Resources\Images\Icons\Collapse.png" />
+    <Content Include="Resources\Images\Icons\CollapseLeft.png" />
+    <Content Include="Resources\Images\Icons\CollapseRight.png" />
+    <Content Include="Resources\Images\Icons\CopyText.png" />
+    <Content Include="Resources\Images\Icons\CounterClockwise-Small.png" />
+    <Content Include="Resources\Images\Icons\CounterClockwise.png" />
+    <Content Include="Resources\Images\Icons\DeselectOnDown-Mouse.png" />
+    <Content Include="Resources\Images\Icons\DeselectOnDown-Touch.png" />
+    <Content Include="Resources\Images\Icons\Disable.png" />
+    <Content Include="Resources\Images\Icons\dlg-close.svg" />
+    <Content Include="Resources\Images\Icons\dlg-create.svg" />
+    <Content Include="Resources\Images\Icons\Document.png" />
+    <Content Include="Resources\Images\Icons\DocumentAnnotations.png" />
+    <Content Include="Resources\Images\Icons\DoubleLayout.png" />
+    <Content Include="Resources\Images\Icons\drop-arrow.svg" />
+    <Content Include="Resources\Images\Icons\EnableToolTip.png" />
+    <Content Include="Resources\Images\Icons\Expand.png" />
+    <Content Include="Resources\Images\Icons\Find-XSmall.png" />
+    <Content Include="Resources\Images\Icons\FindText.png" />
+    <Content Include="Resources\Images\Icons\FirstPage-Small.png" />
+    <Content Include="Resources\Images\Icons\FirstPage.png" />
+    <Content Include="Resources\Images\Icons\Fit.png" />
+    <Content Include="Resources\Images\Icons\fit.svg" />
+    <Content Include="Resources\Images\Icons\FitPage.png" />
+    <Content Include="Resources\Images\Icons\FitWidth.png" />
+    <Content Include="Resources\Images\Icons\Flip.png" />
+    <Content Include="Resources\Images\Icons\folder.svg" />
+    <Content Include="Resources\Images\Icons\FourLines.png" />
+    <Content Include="Resources\Images\Icons\gear-hover.svg" />
+    <Content Include="Resources\Images\Icons\gear.svg" />
+    <Content Include="Resources\Images\Icons\Group.png" />
+    <Content Include="Resources\Images\Icons\H.png" />
+    <Content Include="Resources\Images\Icons\Hand.png" />
+    <Content Include="Resources\Images\Icons\Help.png" />
+    <Content Include="Resources\Images\Icons\Highlight.png" />
+    <Content Include="Resources\Images\Icons\HorizontalLayout.png" />
+    <Content Include="Resources\Images\Icons\HSquiggles.png" />
+    <Content Include="Resources\Images\Icons\Image.png" />
+    <Content Include="Resources\Images\Icons\InertiaScroll.png" />
+    <Content Include="Resources\Images\Icons\InsertAfter.png" />
+    <Content Include="Resources\Images\Icons\InsertBefore.png" />
+    <Content Include="Resources\Images\Icons\Interpolation.png" />
+    <Content Include="Resources\Images\Icons\Intersect.png" />
+    <Content Include="Resources\Images\Icons\LastPage-Small.png" />
+    <Content Include="Resources\Images\Icons\LastPage.png" />
+    <Content Include="Resources\Images\Icons\Left-Align.png" />
+    <Content Include="Resources\Images\Icons\Line.png" />
+    <Content Include="Resources\Images\Icons\LoadBates.png" />
+    <Content Include="Resources\Images\Icons\Lock.png" />
+    <Content Include="Resources\Images\Icons\magnify.svg" />
+    <Content Include="Resources\Images\Icons\MagnifyGlassMode.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Height.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Size.png" />
+    <Content Include="Resources\Images\Icons\Make-Same-Width.png" />
+    <Content Include="Resources\Images\Icons\MedicalAnnotation.png" />
+    <Content Include="Resources\Images\Icons\Middle-Align.png" />
+    <Content Include="Resources\Images\Icons\Midline.png" />
+    <Content Include="Resources\Images\Icons\MultiPagesExportText.png" />
+    <Content Include="Resources\Images\Icons\NextPage-Small.png" />
+    <Content Include="Resources\Images\Icons\NextPage-XSmall.png" />
+    <Content Include="Resources\Images\Icons\NextPage.png" />
+    <Content Include="Resources\Images\Icons\Norberg.png" />
+    <Content Include="Resources\Images\Icons\Note.png" />
+    <Content Include="Resources\Images\Icons\notify-more.svg" />
+    <Content Include="Resources\Images\Icons\notify-warning.svg" />
+    <Content Include="Resources\Images\Icons\object-align-bottom.svg" />
+    <Content Include="Resources\Images\Icons\object-align-center.svg" />
+    <Content Include="Resources\Images\Icons\object-align-left.svg" />
+    <Content Include="Resources\Images\Icons\object-align-middle.svg" />
+    <Content Include="Resources\Images\Icons\object-align-right.svg" />
+    <Content Include="Resources\Images\Icons\object-align-top.svg" />
+    <Content Include="Resources\Images\Icons\object-same-height.svg" />
+    <Content Include="Resources\Images\Icons\object-same-size.svg" />
+    <Content Include="Resources\Images\Icons\object-same-width.svg" />
+    <Content Include="Resources\Images\Icons\Open.png" />
+    <Content Include="Resources\Images\Icons\OpenAnnotation.png" />
+    <Content Include="Resources\Images\Icons\OpenUrl.png" />
+    <Content Include="Resources\Images\Icons\pan-zoom.svg" />
+    <Content Include="Resources\Images\Icons\PanMode.png" />
+    <Content Include="Resources\Images\Icons\PanZoomMode.png" />
+    <Content Include="Resources\Images\Icons\ParallelLines.png" />
+    <Content Include="Resources\Images\Icons\Pen.png" />
+    <Content Include="Resources\Images\Icons\Pin.png" />
+    <Content Include="Resources\Images\Icons\Pointer.png" />
+    <Content Include="Resources\Images\Icons\Polygon.png" />
+    <Content Include="Resources\Images\Icons\Polyline.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage-Small.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage-XSmall.png" />
+    <Content Include="Resources\Images\Icons\PreviousPage.png" />
+    <Content Include="Resources\Images\Icons\Print.png" />
+    <Content Include="Resources\Images\Icons\Properties.png" />
+    <Content Include="Resources\Images\Icons\Protractor.png" />
+    <Content Include="Resources\Images\Icons\question.svg" />
+    <Content Include="Resources\Images\Icons\RealizeRedact.png" />
+    <Content Include="Resources\Images\Icons\Rectangle.png" />
+    <Content Include="Resources\Images\Icons\Redact.png" />
+    <Content Include="Resources\Images\Icons\Redo.png" />
+    <Content Include="Resources\Images\Icons\Reload-Small.png" />
+    <Content Include="Resources\Images\Icons\RenderAnnOnThumbnails.png" />
+    <Content Include="Resources\Images\Icons\RenderMode.png" />
+    <Content Include="Resources\Images\Icons\RenderModeSettings.png" />
+    <Content Include="Resources\Images\Icons\ResetRotatePoint.png" />
+    <Content Include="Resources\Images\Icons\RestoreRedact.png" />
+    <Content Include="Resources\Images\Icons\Reverse.png" />
+    <Content Include="Resources\Images\Icons\RichText.png" />
+    <Content Include="Resources\Images\Icons\Right-Align.png" />
+    <Content Include="Resources\Images\Icons\RotateThumb.png" />
+    <Content Include="Resources\Images\Icons\RoundX.png" />
+    <Content Include="Resources\Images\Icons\Ruler.png" />
+    <Content Include="Resources\Images\Icons\Run.png" />
+    <Content Include="Resources\Images\Icons\Save.png" />
+    <Content Include="Resources\Images\Icons\SaveXML.png" />
+    <Content Include="Resources\Images\Icons\Scan.png" />
+    <Content Include="Resources\Images\Icons\ScanSelect.png" />
+    <Content Include="Resources\Images\Icons\SCurve.png" />
+    <Content Include="Resources\Images\Icons\SelectAll.png" />
+    <Content Include="Resources\Images\Icons\SelectAllAnnotations.png" />
+    <Content Include="Resources\Images\Icons\SelectAllText.png" />
+    <Content Include="Resources\Images\Icons\SelectAreaMode.png" />
+    <Content Include="Resources\Images\Icons\SelectTextMode.png" />
+    <Content Include="Resources\Images\Icons\Server.png" />
+    <Content Include="Resources\Images\Icons\Settings.png" />
+    <Content Include="Resources\Images\Icons\ShowLinks.png" />
+    <Content Include="Resources\Images\Icons\ShowTextIndicators.png" />
+    <Content Include="Resources\Images\Icons\SinglePageExportText.png" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left-disabled.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left-hover.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-left.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right-disabled.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right-hover.svg" />
+    <Content Include="Resources\Images\Icons\slider-arrow-right.svg" />
+    <Content Include="Resources\Images\Icons\Snap-To-Grid.png" />
+    <Content Include="Resources\Images\Icons\Snap-To-Point.png" />
+    <Content Include="Resources\Images\Icons\Snap.png" />
+    <Content Include="Resources\Images\Icons\Solid.png" />
+    <Content Include="Resources\Images\Icons\Sound.png" />
+    <Content Include="Resources\Images\Icons\Stamp.png" />
+    <Content Include="Resources\Images\Icons\StickyNotes.png" />
+    <Content Include="Resources\Images\Icons\Strikethrough.png" />
+    <Content Include="Resources\Images\Icons\THighlight.png" />
+    <Content Include="Resources\Images\Icons\Thumbnails.png" />
+    <Content Include="Resources\Images\Icons\thumbs.svg" />
+    <Content Include="Resources\Images\Icons\ToBack.png" />
+    <Content Include="Resources\Images\Icons\ToFirst.png" />
+    <Content Include="Resources\Images\Icons\ToFront.png" />
+    <Content Include="Resources\Images\Icons\ToLast.png" />
+    <Content Include="Resources\Images\Icons\tools.svg" />
+    <Content Include="Resources\Images\Icons\Top-Align.png" />
+    <Content Include="Resources\Images\Icons\TrashAll.png" />
+    <Content Include="Resources\Images\Icons\TrashSingle.png" />
+    <Content Include="Resources\Images\Icons\TRedact.png" />
+    <Content Include="Resources\Images\Icons\Triangle.png" />
+    <Content Include="Resources\Images\Icons\Underline.png" />
+    <Content Include="Resources\Images\Icons\Undo.png" />
+    <Content Include="Resources\Images\Icons\Ungroup.png" />
+    <Content Include="Resources\Images\Icons\Unlock.png" />
+    <Content Include="Resources\Images\Icons\UserName.png" />
+    <Content Include="Resources\Images\Icons\VerticalLayout.png" />
+    <Content Include="Resources\Images\Icons\Video.png" />
+    <Content Include="Resources\Images\Icons\view-actual.svg" />
+    <Content Include="Resources\Images\Icons\view-fit.svg" />
+    <Content Include="Resources\Images\Icons\View.png" />
+    <Content Include="Resources\Images\Icons\ViewAsImage.png" />
+    <Content Include="Resources\Images\Icons\ViewAsSvg.png" />
+    <Content Include="Resources\Images\Icons\zoom-gray-in.svg" />
+    <Content Include="Resources\Images\Icons\zoom-gray-out.svg" />
+    <Content Include="Resources\Images\Icons\ZoomIn-Small.png" />
+    <Content Include="Resources\Images\Icons\ZoomIn.png" />
+    <Content Include="Resources\Images\Icons\ZoomMode.png" />
+    <Content Include="Resources\Images\Icons\ZoomOut-Small.png" />
+    <Content Include="Resources\Images\Icons\ZoomOut.png" />
+    <Content Include="Resources\Images\Icons\ZoomToMode.png" />
+    <Content Include="Resources\Images\LEAD.png" />
+    <Content Include="Resources\Images\lead.svg" />
+    <Content Include="Resources\Images\leadtools-color.svg" />
+    <Content Include="Resources\Images\leadtools-gray.png" />
+    <Content Include="Resources\Images\leadtools-gray.svg" />
+    <Content Include="Resources\Images\LeadtoolsHeader.png" />
+    <Content Include="Resources\Images\loading-diamond.gif" />
+    <Content Include="Resources\Images\loading.GIF" />
+    <Content Include="Resources\Images\LoadingBar-Small.gif" />
+    <Content Include="Resources\Images\LoadingBar.GIF" />
+    <Content Include="Resources\NoHTML5Support.html" />
+    <Content Include="Resources\Objects\Audio.png" />
+    <Content Include="Resources\Objects\EncryptPrimary.png" />
+    <Content Include="Resources\Objects\EncryptSecondary.png" />
+    <Content Include="Resources\Objects\Hotspot.png" />
+    <Content Include="Resources\Objects\Lock.png" />
+    <Content Include="Resources\Objects\Note.png" />
+    <Content Include="Resources\Objects\Point.png" />
+    <Content Include="Resources\Objects\RubberStamps\Approved.png" />
+    <Content Include="Resources\Objects\RubberStamps\Assigned.png" />
+    <Content Include="Resources\Objects\RubberStamps\Checked.png" />
+    <Content Include="Resources\Objects\RubberStamps\Client.png" />
+    <Content Include="Resources\Objects\RubberStamps\Copy.png" />
+    <Content Include="Resources\Objects\RubberStamps\Draft.png" />
+    <Content Include="Resources\Objects\RubberStamps\Extended.png" />
+    <Content Include="Resources\Objects\RubberStamps\Fax.png" />
+    <Content Include="Resources\Objects\RubberStamps\Faxed.png" />
+    <Content Include="Resources\Objects\RubberStamps\Important.png" />
+    <Content Include="Resources\Objects\RubberStamps\Invoice.png" />
+    <Content Include="Resources\Objects\RubberStamps\Notice.png" />
+    <Content Include="Resources\Objects\RubberStamps\Official.png" />
+    <Content Include="Resources\Objects\RubberStamps\OnFile.png" />
+    <Content Include="Resources\Objects\RubberStamps\Paid.png" />
+    <Content Include="Resources\Objects\RubberStamps\Passed.png" />
+    <Content Include="Resources\Objects\RubberStamps\Pending.png" />
+    <Content Include="Resources\Objects\RubberStamps\Processed.png" />
+    <Content Include="Resources\Objects\RubberStamps\Received.png" />
+    <Content Include="Resources\Objects\RubberStamps\Rejected.png" />
+    <Content Include="Resources\Objects\RubberStamps\Release.png" />
+    <Content Include="Resources\Objects\RubberStamps\Sent.png" />
+    <Content Include="Resources\Objects\RubberStamps\Shipped.png" />
+    <Content Include="Resources\Objects\RubberStamps\TopSecret.png" />
+    <Content Include="Resources\Objects\RubberStamps\Urgent.png" />
+    <Content Include="Resources\Objects\RubberStamps\Void.png" />
+    <Content Include="Resources\Objects\StickyNote.png" />
+    <Content Include="Resources\Objects\Video.png" />
+    <Content Include="Resources\Styles\AutomationObjectsList.css" />
+    <Content Include="Resources\Styles\bootstrap\custom-bootstrap.min.css" />
+    <Content Include="Resources\Styles\common-basic.css" />
+    <Content Include="Resources\Styles\common.css" />
+    <Content Include="Resources\Styles\dialogs.css" />
+    <Content Include="Resources\Styles\elements.css" />
+    <Content Include="Resources\Styles\icons-annotations.css" />
+    <Content Include="Resources\Styles\Icons.css" />
+    <Content Include="Resources\Styles\LEADServiceStyles.css" />
+    <Content Include="Resources\Styles\lt-notify.css" />
+    <Content Include="Resources\Styles\lt-slider.css" />
+    <Content Include="Resources\Styles\Sidebar.css" />
+    <Content Include="Resources\Styles\Site.css" />
+    <Content Include="Resources\Styles\spectrum\spectrum.css" />
+    <Content Include="Resources\Styles\SplitWindow.css" />
+    <Content Include="Resources\Styles\tab.css" />
+    <Content Include="Resources\Styles\Table.css" />
+    <Content Include="Resources\Styles\Toolbar.css" />
+    <Content Include="serviceConfig.json" />
+    <Content Include="Resources\cmaps\78-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\78-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\78-H.bcmap" />
+    <Content Include="Resources\cmaps\78-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\78-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\78-V.bcmap" />
+    <Content Include="Resources\cmaps\78ms-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\78ms-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\83pv-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\90ms-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\90ms-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\90msp-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\90msp-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\90pv-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\90pv-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\Add-H.bcmap" />
+    <Content Include="Resources\cmaps\Add-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\Add-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\Add-V.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-0.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-1.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-3.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-4.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-5.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-6.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-CNS1-UCS2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-0.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-1.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-3.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-4.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-5.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-GB1-UCS2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-0.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-1.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-3.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-4.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-5.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-6.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Japan1-UCS2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Korea1-0.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Korea1-1.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Korea1-2.bcmap" />
+    <Content Include="Resources\cmaps\Adobe-Korea1-UCS2.bcmap" />
+    <Content Include="Resources\cmaps\B5-H.bcmap" />
+    <Content Include="Resources\cmaps\B5-V.bcmap" />
+    <Content Include="Resources\cmaps\B5pc-H.bcmap" />
+    <Content Include="Resources\cmaps\B5pc-V.bcmap" />
+    <Content Include="Resources\cmaps\CNS-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\CNS-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\CNS1-H.bcmap" />
+    <Content Include="Resources\cmaps\CNS1-V.bcmap" />
+    <Content Include="Resources\cmaps\CNS2-H.bcmap" />
+    <Content Include="Resources\cmaps\CNS2-V.bcmap" />
+    <Content Include="Resources\cmaps\ETen-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\ETen-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\ETenms-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\ETenms-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\ETHK-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\ETHK-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\Ext-H.bcmap" />
+    <Content Include="Resources\cmaps\Ext-RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\Ext-RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\Ext-V.bcmap" />
+    <Content Include="Resources\cmaps\GB-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GB-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\GB-H.bcmap" />
+    <Content Include="Resources\cmaps\GB-V.bcmap" />
+    <Content Include="Resources\cmaps\GBK-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GBK-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\GBK2K-H.bcmap" />
+    <Content Include="Resources\cmaps\GBK2K-V.bcmap" />
+    <Content Include="Resources\cmaps\GBKp-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GBKp-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\GBpc-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GBpc-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\GBT-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GBT-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\GBT-H.bcmap" />
+    <Content Include="Resources\cmaps\GBT-V.bcmap" />
+    <Content Include="Resources\cmaps\GBTpc-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\GBTpc-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\H.bcmap" />
+    <Content Include="Resources\cmaps\Hankaku.bcmap" />
+    <Content Include="Resources\cmaps\Hiragana.bcmap" />
+    <Content Include="Resources\cmaps\HKdla-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKdla-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\HKdlb-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKdlb-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\HKgccs-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKgccs-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\HKm314-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKm314-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\HKm471-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKm471-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\HKscs-B5-H.bcmap" />
+    <Content Include="Resources\cmaps\HKscs-B5-V.bcmap" />
+    <Content Include="Resources\cmaps\Katakana.bcmap" />
+    <Content Include="Resources\cmaps\KSC-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\KSC-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\KSC-H.bcmap" />
+    <Content Include="Resources\cmaps\KSC-Johab-H.bcmap" />
+    <Content Include="Resources\cmaps\KSC-Johab-V.bcmap" />
+    <Content Include="Resources\cmaps\KSC-V.bcmap" />
+    <Content Include="Resources\cmaps\KSCms-UHC-H.bcmap" />
+    <Content Include="Resources\cmaps\KSCms-UHC-HW-H.bcmap" />
+    <Content Include="Resources\cmaps\KSCms-UHC-HW-V.bcmap" />
+    <Content Include="Resources\cmaps\KSCms-UHC-V.bcmap" />
+    <Content Include="Resources\cmaps\KSCpc-EUC-H.bcmap" />
+    <Content Include="Resources\cmaps\KSCpc-EUC-V.bcmap" />
+    <Content Include="Resources\cmaps\LICENSE" />
+    <Content Include="Resources\cmaps\NWP-H.bcmap" />
+    <Content Include="Resources\cmaps\NWP-V.bcmap" />
+    <Content Include="Resources\cmaps\RKSJ-H.bcmap" />
+    <Content Include="Resources\cmaps\RKSJ-V.bcmap" />
+    <Content Include="Resources\cmaps\Roman.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UCS2-H.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UCS2-V.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF16-H.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF16-V.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF8-H.bcmap" />
+    <Content Include="Resources\cmaps\UniCNS-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UCS2-H.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UCS2-V.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF16-H.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF16-V.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF8-H.bcmap" />
+    <Content Include="Resources\cmaps\UniGB-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UCS2-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UCS2-HW-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UCS2-HW-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UCS2-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF16-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF16-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF8-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF16-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF16-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF8-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJIS2004-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJISPro-UCS2-HW-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJISPro-UCS2-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJISPro-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJISX0213-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJISX0213-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniJISX02132004-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniJISX02132004-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UCS2-H.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UCS2-V.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF16-H.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF16-V.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF32-H.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF32-V.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF8-H.bcmap" />
+    <Content Include="Resources\cmaps\UniKS-UTF8-V.bcmap" />
+    <Content Include="Resources\cmaps\V.bcmap" />
+    <Content Include="Resources\cmaps\WP-Symbol.bcmap" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="index.html" />
+    <Content Include="readme.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <!-- The "CopyLinkedFiles" target copies all linked Content files from their link directories to their project location. -->
+  <!-- This is necessary to keep up-to-date copies of Leadtools JS libs and other resources shared between multiple client projects. -->
+  <Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" SkipUnchangedFiles="true" OverwriteReadOnlyFiles="true" />
+  </Target>
+  <!-- End "CopyLinkedFiles" Target -->
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>20010</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20010/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

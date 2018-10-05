@@ -1,0 +1,23 @@
+﻿{
+   "_comment_": "This file is used if an external application needs to change the values the client application will use to communicate with the service.",
+
+   "licenseDirectory": null,
+
+   "serviceHost": "http://localhost:20000",
+   "servicePath": "",
+   "serviceApiPath": "api",
+
+   "app3": "http://localhost:20030",
+   "app4": "http://localhost:20040",
+
+   "heartbeatDefaults": {
+      "startEnabled": false,
+      "startTimer": 2000,
+      "intervalTimer": 15000,
+      "inactivityTimer": 60000,
+      "failureMessage": "The client is no longer connected to the service.\nDocument '${documentId}' will not be saved. Please verify the connection to the service and try again."
+   },
+
+   "GoogleDriveLoad_ClientID": "",
+   "GoogleDriveLoad_APIKey": ""
+}

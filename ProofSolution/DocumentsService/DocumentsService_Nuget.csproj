@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{40752939-D8CC-4DB4-AB26-789366BBD6A2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DocumentsService</RootNamespace>
+    <AssemblyName>DocumentsService</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>None</ResolveAssemblyWarnOrErrorOnTargetArchitectureMismatch>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\XmlDocument.xml</DocumentationFile>
+    <NoWarn>1591</NoWarn>
+    <Use64BitIISExpress>true</Use64BitIISExpress>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <!-- v20 - Debug - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - AnyCPU -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!-- v20 - Debug - x86 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - x86 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <!-- v20 - Debug - x64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;DEBUG;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>CodeAnalysis\DotNet.ruleset</CodeAnalysisRuleSet>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <!-- v20 - Release - x64 -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin</OutputPath>
+    <DefineConstants>TRACE;FOR_ANYCPU,LTV20_CONFIG,LEADTOOLS_V16_OR_LATER,LEADTOOLS_V17_OR_LATER;LEADTOOLS_V175_OR_LATER;FOR_DOTNET4;LEADTOOLS_V18_OR_LATER;LEADTOOLS_V19_OR_LATER;LEADTOOLS_V20_OR_LATER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.FileSystems, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.FileSystems.3.0.1\lib\net45\Microsoft.Owin.FileSystems.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Owin.StaticFiles, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Owin.StaticFiles.3.0.1\lib\net45\Microsoft.Owin.StaticFiles.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.DocumentManagement, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.DocumentManagement.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Runtime, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.SharePoint.Client.Search, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Sharepoint.1.0.1\lib\net40\Microsoft.SharePoint.Client.Search.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Client.5.2.3\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Cors.5.2.3\lib\net45\System.Web.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Core.5.2.3\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.Cors, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.Cors.5.2.3\lib\net45\System.Web.Http.Cors.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.3\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Mvc.5.2.3\lib\net45\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.Razor.3.2.3\lib\net45\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Microsoft.AspNet.WebPages.3.2.3\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowsBase">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\..\..\Resources\development.html">
+      <Link>Resources\development.html</Link>
+    </Content>
+    <Content Include="..\..\..\Resources\Images\favicon.ico">
+      <Link>Resources\Images\favicon.ico</Link>
+    </Content>
+    <Content Include="..\..\..\Resources\Images\LeadtoolsHeader.png">
+      <Link>Resources\Images\LeadtoolsHeader.png</Link>
+    </Content>
+    <Content Include="..\..\..\Resources\Images\loading.GIF">
+      <Link>Resources\Images\loading.GIF</Link>
+    </Content>
+    <Content Include="..\..\..\Resources\Styles\LEADServiceStyles.css">
+      <Link>Resources\Styles\LEADServiceStyles.css</Link>
+    </Content>
+    <Content Include="..\Common\index.js">
+      <Link>index.js</Link>
+    </Content>
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <CodeAnalysisDictionary Include="CodeAnalysis\CustomDictionary.xml" />
+    <Content Include="config-filecache.xml" />
+    <Content Include="index.html" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="local.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CodeAnalysis\DotNet.ruleset" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\ResourceModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\SimpleTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ModelDescriptionLink.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\KeyValuePairModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\EnumTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\DictionaryModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ComplexTypeModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Samples\barcodes.pdf" />
+    <Content Include="Samples\Combined.pdf" />
+    <Content Include="Samples\House1.jpg" />
+    <Content Include="Samples\House2.jpg" />
+    <Content Include="Samples\Leadtools.pdf" />
+    <Content Include="Samples\form_2t.pdf" />
+    <Content Include="Samples\NewHome.pdf" />
+    <Content Include="html-domain-whitelist.json" />
+    <Content Include="mimetypes.json" />
+    <None Include="packages.DocumentsService_Nuget.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="Samples\OCR1-4.tif" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Common\Controllers\CacheController.cs">
+      <Link>Controllers\CacheController.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Models\Base.cs">
+      <Link>Models\Base.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Models\DocumentModels.cs">
+      <Link>Models\DocumentModels.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Models\PreCacheModels.cs">
+      <Link>Models\PreCacheModels.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\DocumentConverterPreferences.cs">
+      <Link>Tools\DocumentConverterPreferences.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\AlwaysCorsFilter.cs">
+      <Link>Tools\Helpers\AlwaysCorsFilter.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\ConverterHelper.cs">
+      <Link>Tools\Helpers\ConverterHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\DocumentHelper.cs">
+      <Link>Tools\Helpers\DocumentHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\PreCacheHelper.cs">
+      <Link>Tools\Helpers\PreCacheHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\ServiceHelper.cs">
+      <Link>Tools\Helpers\ServiceHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\Common\Tools\Helpers\ZipTools.cs">
+      <Link>Tools\Helpers\ZipTools.cs</Link>
+    </Compile>
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\IModelDocumentationProvider.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\ParameterDescription.cs" />
+    <Compile Include="Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AnnotationsController.cs" />
+    <Compile Include="Controllers\DocumentController.cs" />
+    <Compile Include="Controllers\FactoryController.cs" />
+    <Compile Include="Controllers\ImagesController.cs" />
+    <Compile Include="Controllers\PageController.cs" />
+    <Compile Include="Controllers\SharePointController.cs" />
+    <Compile Include="Controllers\StatusJobConverterController.cs" />
+    <Compile Include="Controllers\StructureController.cs" />
+    <Compile Include="Controllers\TestController.cs" />
+    <Compile Include="Models\AnnotationsModels.cs" />
+    <Compile Include="Models\FactoryModels.cs" />
+    <Compile Include="Models\ImagesModels.cs" />
+    <Compile Include="Models\PageModels.cs" />
+    <Compile Include="Models\SharePointModels.cs" />
+    <Compile Include="Models\StatusJobConverterModels.cs" />
+    <Compile Include="Models\StructureModels.cs" />
+    <Compile Include="Models\TestModels.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tools\Exceptions\ControllerActivator.cs" />
+    <Compile Include="Tools\Exceptions\GlobalExceptionFilter.cs" />
+    <Compile Include="Tools\Exceptions\GlobalExceptionLogger.cs" />
+    <Compile Include="Tools\Exceptions\ServiceException.cs" />
+    <Compile Include="Tools\Helpers\AnnotationsHelper.cs" />
+    <Compile Include="Tools\Helpers\ImageResizer.cs" />
+    <Compile Include="Tools\Helpers\ImageSaver.cs" />
+    <Compile Include="Tools\Helpers\SaveImageFormat.cs" />
+    <Compile Include="Tools\RequestResponseFilter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- The below target copies all linked files from their link directories to where they should be in the project. This is necessary for our static server.-->
+  <Target Name="CopyLinkedFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <LinkedItem Include="@(Content)" Condition="%(Content.Link) != ''" />
+    </ItemGroup>
+    <Copy SourceFiles="@(LinkedItem)" DestinationFiles="%(LinkedItem.Link)" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyLicense" BeforeTargets="Build">
+    <!-- Before building and running for IISExpress, copy the license files (if they exist) from the installation. -->
+    <!-- You must set a license and developer key to use the application. -->
+    <!-- If you are not using the installation or publishing to IIS, look in local.config to set the license. -->
+    <PropertyGroup>
+      <LicenseInstallationDir>..\..\..\..\..\..\Common\License</LicenseInstallationDir>
+      <LicenseInstallationFullDir>$(MSBuildProjectDirectory)\$(LicenseInstallationDir)</LicenseInstallationFullDir>
+    </PropertyGroup>
+    <ItemGroup>
+      <LicenseFiles Include="LEADTOOLS.LIC;LEADTOOLS.LIC.key" />
+    </ItemGroup>
+    <Message Importance="high" Condition="!Exists('$(LicenseInstallationFullDir)\%(LicenseFiles.Identity)')" Text="Not Found: &quot;$(LicenseInstallationFullDir)\%(LicenseFiles.Identity)&quot;" />
+    <Copy SourceFiles="$(LicenseInstallationFullDir)\%(LicenseFiles.Identity)" Condition="Exists('$(LicenseInstallationFullDir)\%(LicenseFiles.Identity)')" DestinationFiles="$(OutputPath)\%(LicenseFiles.Identity)" SkipUnchangedFiles="true" />
+  </Target>
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>16219</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:20000/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Import Project="..\..\packages\Leadtools.Caching.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Caching.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Caching.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Caching.dll.NETFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Leadtools.Caching.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Caching.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Caching.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Caching.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.dll.NETFramework.20.0.0.2\build\net40\Leadtools.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.dll.NETFramework.20.0.0.2\build\net40\Leadtools.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.OneD.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.OneD.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.OneD.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.OneD.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.PdfRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfRead.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.PdfRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfRead.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.PdfWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfWrite.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.PdfWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfWrite.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.QrRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrRead.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.QrRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrRead.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.QrWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrWrite.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.QrWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrWrite.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Bmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Bmp.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Bmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Bmp.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Cmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmp.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Cmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmp.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Cmw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmw.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Cmw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmw.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.Engine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Engine.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.Engine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Engine.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.BatesStamp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.BatesStamp.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.BatesStamp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.BatesStamp.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Async.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Async.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Async.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Async.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Fax.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Fax.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Fax.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Fax.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Gif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gif.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Gif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gif.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Htm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Htm.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Htm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Htm.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.J2k.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.J2k.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.J2k.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.J2k.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Jb2.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jb2.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Jb2.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jb2.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Jbg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jbg.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Jbg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jbg.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Mob.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mob.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Mob.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mob.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Pct.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pct.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Pct.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pct.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Png.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Png.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Png.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Png.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Pst.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pst.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Pst.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pst.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Pub.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pub.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Pub.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pub.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Raw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Raw.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Raw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Raw.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Rtf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Rtf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Rtf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Rtf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Tif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Tif.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Tif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Tif.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Wmf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Wmf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Wmz.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmz.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Wmz.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmz.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Wpg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wpg.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Wpg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wpg.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Xps.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xps.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Xps.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xps.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ColorConversion.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ColorConversion.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ColorConversion.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ColorConversion.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Drawing.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Drawing.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Doc.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Doc.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Doc.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Doc.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Txt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Txt.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Txt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Txt.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Drawing.MP.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.MP.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Drawing.MP.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.MP.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.Utilities.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Utilities.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.Utilities.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Utilities.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.Color.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Color.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.Color.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Color.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Ppt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppt.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Ppt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppt.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Xls.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xls.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Xls.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xls.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.Core.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Core.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.Core.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Core.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.Lead2DRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DRead.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.Lead2DRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DRead.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.Effects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Effects.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.Effects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Effects.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.Kernel.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Kernel.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.Kernel.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Kernel.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.2\build\Leadtools.Ocr.Languages.Main.NET.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.2\build\Leadtools.Ocr.Languages.Main.NET.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.OpenXml.dll.NETFramework.20.0.0.2\build\net40\Leadtools.OpenXml.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.OpenXml.dll.NETFramework.20.0.0.2\build\net40\Leadtools.OpenXml.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Dox.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dox.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Dox.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dox.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Ppx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppx.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Ppx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppx.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Xlx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xlx.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Xlx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xlx.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Pdf.Annotations.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.Annotations.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Pdf.Annotations.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.Annotations.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Vector.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Vector.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Vector.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Vector.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.3js.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.3js.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.3js.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.3js.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Cgm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cgm.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Cgm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cgm.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Cmx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmx.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Cmx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmx.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Dgn.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dgn.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Dgn.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dgn.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Drw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Drw.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Drw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Drw.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Dwf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Dwf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Dwg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwg.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Dwg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwg.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Dxf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dxf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Dxf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dxf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.E00.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.E00.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.E00.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.E00.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Gbr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gbr.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Gbr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gbr.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Mif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mif.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Mif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mif.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Nap.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Nap.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Nap.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Nap.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Pcl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pcl.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Pcl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pcl.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Shp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Shp.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Shp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Shp.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Codecs.Stl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Stl.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Codecs.Stl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Stl.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Svg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Svg.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Svg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Svg.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Document.Writer.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Writer.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Document.Writer.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Writer.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Document.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Document.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Document.Converter.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Converter.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Document.Converter.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Converter.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Document.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Pdf.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Document.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Pdf.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Document.Raster.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Raster.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Document.Raster.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Raster.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Ocr.LEADEngine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.LEADEngine.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Ocr.LEADEngine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.LEADEngine.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.Designers.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Designers.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.Designers.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Designers.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.Automation.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Automation.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.Automation.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Automation.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Controls.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Controls.WinForms.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Controls.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Controls.WinForms.dll.NETFramework.targets'))" />
+    <Error Condition="!Exists('..\..\packages\Leadtools.Annotations.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.WinForms.dll.NETFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Leadtools.Annotations.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.WinForms.dll.NETFramework.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Leadtools.dll.NETFramework.20.0.0.2\build\net40\Leadtools.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.dll.NETFramework.20.0.0.2\build\net40\Leadtools.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixRead.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.DatamatrixWrite.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.OneD.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.OneD.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.OneD.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.OneD.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.PdfRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfRead.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.PdfRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfRead.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.PdfWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfWrite.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.PdfWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.PdfWrite.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.QrRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrRead.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.QrRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrRead.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.QrWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrWrite.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.QrWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.QrWrite.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Bmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Bmp.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Bmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Bmp.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Cmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmp.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Cmp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmp.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Cmw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmw.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Cmw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmw.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.Engine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Engine.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.Engine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Engine.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.BatesStamp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.BatesStamp.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.BatesStamp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.BatesStamp.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Async.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Async.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Async.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Async.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Fax.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Fax.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Fax.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Fax.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Gif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gif.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Gif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gif.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Htm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Htm.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Htm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Htm.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.J2k.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.J2k.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.J2k.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.J2k.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Jb2.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jb2.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Jb2.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jb2.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Jbg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jbg.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Jbg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Jbg.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Mob.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mob.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Mob.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mob.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Pct.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pct.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Pct.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pct.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Png.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Png.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Png.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Png.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Pst.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pst.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Pst.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pst.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Pub.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pub.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Pub.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pub.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Raw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Raw.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Raw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Raw.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Rtf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Rtf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Rtf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Rtf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Tif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Tif.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Tif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Tif.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Wmf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Wmf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Wmz.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmz.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Wmz.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wmz.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Wpg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wpg.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Wpg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Wpg.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Xps.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xps.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Xps.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xps.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ColorConversion.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ColorConversion.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ColorConversion.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ColorConversion.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Drawing.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Drawing.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Doc.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Doc.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Doc.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Doc.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Txt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Txt.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Txt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Txt.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Drawing.MP.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.MP.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Drawing.MP.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Drawing.MP.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.Utilities.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Utilities.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.Utilities.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Utilities.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.Color.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Color.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.Color.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Color.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Ppt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppt.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Ppt.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppt.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Xls.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xls.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Xls.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xls.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.Core.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Core.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.Core.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Core.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.Lead2DRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DRead.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.Lead2DRead.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DRead.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Barcode.Lead2DWrite.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.Effects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Effects.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.Effects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Effects.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.Kernel.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Kernel.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.Kernel.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.Kernel.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.20.0.0.2\build\net40\Leadtools.ImageProcessing.SpecialEffects.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.2\build\Leadtools.Ocr.Languages.Main.NET.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.Languages.Main.NET.20.0.0.2\build\Leadtools.Ocr.Languages.Main.NET.targets')" />
+  <Import Project="..\..\packages\Leadtools.OpenXml.dll.NETFramework.20.0.0.2\build\net40\Leadtools.OpenXml.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.OpenXml.dll.NETFramework.20.0.0.2\build\net40\Leadtools.OpenXml.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Dox.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dox.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Dox.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dox.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Ppx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppx.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Ppx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Ppx.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Xlx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xlx.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Xlx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Xlx.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Pdf.Annotations.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.Annotations.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Pdf.Annotations.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Pdf.Annotations.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Vector.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Vector.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Vector.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Vector.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.3js.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.3js.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.3js.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.3js.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Cgm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cgm.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Cgm.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cgm.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Cmx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmx.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Cmx.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Cmx.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Dgn.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dgn.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Dgn.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dgn.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Drw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Drw.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Drw.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Drw.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Dwf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Dwf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Dwg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwg.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Dwg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dwg.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Dxf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dxf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Dxf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Dxf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.E00.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.E00.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.E00.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.E00.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Gbr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gbr.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Gbr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Gbr.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Mif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mif.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Mif.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Mif.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Nap.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Nap.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Nap.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Nap.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Pcl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pcl.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Pcl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Pcl.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Shp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Shp.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Shp.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Shp.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Codecs.Stl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Stl.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Codecs.Stl.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Codecs.Stl.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Svg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Svg.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Svg.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Svg.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Document.Writer.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Writer.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Document.Writer.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Writer.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Document.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Document.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Document.Converter.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Converter.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Document.Converter.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Converter.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Document.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Pdf.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Document.Pdf.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Pdf.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Document.Raster.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Raster.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Document.Raster.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Document.Raster.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Ocr.LEADEngine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.LEADEngine.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Ocr.LEADEngine.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Ocr.LEADEngine.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.Designers.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Designers.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.Designers.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Designers.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.Automation.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Automation.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.Automation.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Automation.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.Rendering.WinForms.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Controls.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Controls.WinForms.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Controls.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Controls.WinForms.dll.NETFramework.targets')" />
+  <Import Project="..\..\packages\Leadtools.Annotations.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.WinForms.dll.NETFramework.targets" Condition="Exists('..\..\packages\Leadtools.Annotations.WinForms.dll.NETFramework.20.0.0.2\build\net40\Leadtools.Annotations.WinForms.dll.NETFramework.targets')" />
+</Project>
